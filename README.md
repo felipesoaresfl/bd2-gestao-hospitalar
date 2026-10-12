@@ -31,7 +31,7 @@ bd2-gestao-hospitalar/
 ├── docs/                     # Documentação geral
 │   ├── requisitos/           # RFs e RNFs
 │   └── modelagem/            # Diagramas ER, Dicionário de Dados e arquitetura
-│       └── imagens/          # Exportações de diagramas visualizáveis
+│   └── imagens/              # Exportações de imagens
 │
 ├── mysql/                    # Scripts do banco de dados relacional
 │   ├── ddl/                  # Criação de banco e tabelas (01_criacao_banco.sql, 02_criacao_tabelas.sql)
@@ -48,11 +48,11 @@ bd2-gestao-hospitalar/
 ```
 
 ## 👥 Integrantes
-- Ana Julia de Oliveira (RA: 02410684) - [Perfil no GitHub](https://github.com/Ana868julia)
-- Felipe Soares Ferreira Leite (RA: 02410623) - [Perfil no GitHub](https://github.com/felipesoaresfl)
-- Gustavo Cuoghi Bellato (RA: 02410213) - [Perfil no GitHub](https://github.com/GustavoCBellato)
-- Marcos Vinícius Esaú dos Santos (RA: 02410039) - [Perfil no GitHub](https://github.com/Marcos-2864)
-- Saulo Ezequiel Jesus dos Santos (RA: 02410956) - [Perfil no GitHub](https://github.com/SauloJsS)
+- Ana Julia de Oliveira (RA: 02410684) - Github: [Ana868julia](https://github.com/Ana868julia)
+- Felipe Soares Ferreira Leite (RA: 02410623) - Github: [felipesoaresfl](https://github.com/felipesoaresfl)
+- Gustavo Cuoghi Bellato (RA: 02410213) - Github: [GustavoCBellato](https://github.com/GustavoCBellato)
+- Marcos Vinícius Esaú dos Santos (RA: 02410039) - Github: [Marcos-2864](https://github.com/Marcos-2864)
+- Saulo Ezequiel Jesus dos Santos (RA: 02410956) - Github: [SauloJsS](https://github.com/SauloJsS)
 
 ## 🎓 Disciplina
 Banco de Dados II - Curso de Engenharia da Computação (Universidade do Vale do Paraíba - UNIVAP).
