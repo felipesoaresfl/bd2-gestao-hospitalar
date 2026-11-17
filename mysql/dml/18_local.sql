@@ -1,0 +1,61 @@
+-- =====================================================================
+-- Sistema de Gestão de Emergências e Atendimento Hospitalar
+-- Carga de dados - Tabela: LOCAL
+-- Ordem de execução: 18 de 37
+-- Registros: 44
+-- R recepção / T triagem / C consultório / E emergência / X exames / I enfermaria-internação / U UTI.
+-- =====================================================================
+-- Obs.: os IDs são informados explicitamente para garantir que as
+-- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
+
+use gestao_emergencia_hospitalar;
+set names utf8mb4;
+
+insert into local (id_local, nome, tipo, andar) values
+(1, 'Recepção principal', 'R', 'Térreo'),
+(2, 'Recepção pediátrica', 'R', 'Térreo'),
+(3, 'Sala de triagem 1', 'T', 'Térreo'),
+(4, 'Sala de triagem 2', 'T', 'Térreo'),
+(5, 'Sala de triagem 3', 'T', 'Térreo'),
+(6, 'Sala de triagem 4', 'T', 'Térreo'),
+(7, 'Consultório 1', 'C', 'Térreo'),
+(8, 'Consultório 2', 'C', 'Térreo'),
+(9, 'Consultório 3', 'C', 'Térreo'),
+(10, 'Consultório 4', 'C', 'Térreo'),
+(11, 'Consultório 5', 'C', 'Térreo'),
+(12, 'Consultório 6', 'C', 'Térreo'),
+(13, 'Consultório 7', 'C', 'Térreo'),
+(14, 'Consultório 8', 'C', 'Térreo'),
+(15, 'Consultório 9', 'C', 'Térreo'),
+(16, 'Consultório pediátrico 1', 'C', 'Térreo'),
+(17, 'Consultório pediátrico 2', 'C', 'Térreo'),
+(18, 'Consultório pediátrico 3', 'C', 'Térreo'),
+(19, 'Sala vermelha (emergência)', 'E', 'Térreo'),
+(20, 'Sala amarela (emergência)', 'E', 'Térreo'),
+(21, 'Sala de sutura e procedimentos', 'E', 'Térreo'),
+(22, 'Sala de gesso', 'E', 'Térreo'),
+(23, 'Sala de raio-X 1', 'X', 'Térreo'),
+(24, 'Sala de raio-X 2', 'X', 'Térreo'),
+(25, 'Sala de tomografia', 'X', 'Térreo'),
+(26, 'Sala de ultrassonografia', 'X', 'Térreo'),
+(27, 'Sala de eletrocardiograma', 'X', 'Térreo'),
+(28, 'Sala de coleta laboratorial', 'X', 'Térreo'),
+(29, 'Laboratório de análises clínicas', 'X', '1º andar'),
+(30, 'Sala de ecocardiografia', 'X', '1º andar'),
+(31, 'Observação adulto', 'I', 'Térreo'),
+(32, 'Observação pediátrica', 'I', 'Térreo'),
+(33, 'Enfermaria 201', 'I', '2º andar'),
+(34, 'Enfermaria 202', 'I', '2º andar'),
+(35, 'Enfermaria 203', 'I', '2º andar'),
+(36, 'Enfermaria 204', 'I', '2º andar'),
+(37, 'Enfermaria 205', 'I', '2º andar'),
+(38, 'Enfermaria 206', 'I', '2º andar'),
+(39, 'Enfermaria 207', 'I', '2º andar'),
+(40, 'Enfermaria pediátrica 208', 'I', '2º andar'),
+(41, 'Isolamento 1', 'I', '2º andar'),
+(42, 'Isolamento 2', 'I', '2º andar'),
+(43, 'UTI adulto', 'U', '3º andar'),
+(44, 'UTI coronariana', 'U', '3º andar');
+
+-- Conferência
+select * from local;

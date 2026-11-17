@@ -1,0 +1,57 @@
+-- =====================================================================
+-- Sistema de Gestão de Emergências e Atendimento Hospitalar
+-- Carga de dados - Tabela: EXAME
+-- Ordem de execução: 28 de 37
+-- Registros: 40
+-- Catálogo de exames (prazo_resultado em horas).
+-- =====================================================================
+-- Obs.: os IDs são informados explicitamente para garantir que as
+-- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
+
+use gestao_emergencia_hospitalar;
+set names utf8mb4;
+
+insert into exame (id_exame, id_tipo_exame, nome, preparo, prazo_resultado) values
+(1, 1, 'Hemograma completo', null, 2),
+(2, 1, 'Proteína C reativa (PCR)', null, 2),
+(3, 1, 'Glicemia plasmática', 'Jejum de 8 horas quando possível', 1),
+(4, 1, 'Ureia', null, 2),
+(5, 1, 'Creatinina', null, 2),
+(6, 1, 'Sódio', null, 2),
+(7, 1, 'Potássio', null, 2),
+(8, 1, 'TGO (AST)', null, 3),
+(9, 1, 'TGP (ALT)', null, 3),
+(10, 1, 'Amilase', null, 3),
+(11, 1, 'Lipase', null, 3),
+(12, 1, 'Troponina I', null, 1),
+(13, 1, 'CK-MB massa', null, 2),
+(14, 1, 'D-dímero', null, 2),
+(15, 1, 'Tempo de protrombina (TAP/INR)', 'Informar uso de anticoagulante', 2),
+(16, 1, 'Tempo de tromboplastina parcial ativada (TTPa)', 'Informar uso de heparina', 2),
+(17, 1, 'Gasometria arterial', 'Coleta de sangue arterial realizada pela equipe', 1),
+(18, 1, 'Lactato arterial', 'Coleta de sangue arterial realizada pela equipe', 1),
+(19, 1, 'Bilirrubinas totais e frações', null, 3),
+(20, 1, 'Beta-HCG quantitativo', null, 3),
+(21, 1, 'Magnésio', null, 3),
+(22, 1, 'Cálcio iônico', null, 3),
+(23, 2, 'Raio-X de tórax (PA e perfil)', 'Retirar objetos metálicos da região', 1),
+(24, 2, 'Raio-X de membro superior', 'Retirar anéis, relógio e pulseiras', 1),
+(25, 2, 'Raio-X de membro inferior', 'Retirar objetos metálicos da região', 1),
+(26, 2, 'Raio-X de coluna cervical', 'Retirar brincos, colares e prendedores de cabelo', 1),
+(27, 2, 'Raio-X de abdome agudo', 'Retirar objetos metálicos da região', 1),
+(28, 2, 'Tomografia de crânio sem contraste', 'Retirar objetos metálicos; informar uso de marca-passo', 2),
+(29, 2, 'Tomografia de tórax', 'Jejum de 4 horas se houver uso de contraste', 3),
+(30, 2, 'Tomografia de abdome e pelve', 'Jejum de 4 horas; avaliar função renal antes do contraste', 3),
+(31, 2, 'Angiotomografia de tórax', 'Jejum de 4 horas; avaliar função renal antes do contraste', 3),
+(32, 2, 'Ultrassonografia de abdome total', 'Jejum de 6 horas e bexiga cheia', 4),
+(33, 2, 'Ultrassonografia de rins e vias urinárias', 'Bexiga cheia (ingerir 4 copos de água 1 hora antes)', 4),
+(34, 3, 'Eletrocardiograma (ECG) de 12 derivações', null, 1),
+(35, 3, 'Ecocardiograma transtorácico', null, 24),
+(36, 4, 'Hemocultura (2 amostras)', 'Coletar antes do início do antibiótico', 120),
+(37, 4, 'Urocultura com antibiograma', 'Coletar jato médio após higiene íntima', 72),
+(38, 5, 'Urina tipo I (EAS)', 'Coletar jato médio após higiene íntima', 2),
+(39, 6, 'Teste rápido de antígeno para COVID-19', 'Coleta de swab nasal', 1),
+(40, 6, 'Teste rápido NS1 para dengue', null, 1);
+
+-- Conferência
+select * from exame;

@@ -1,0 +1,97 @@
+-- =====================================================================
+-- Sistema de Gestão de Emergências e Atendimento Hospitalar
+-- Carga de dados - Tabela: INSUMO
+-- Ordem de execução: 29 de 37
+-- Registros: 80
+-- M medicamento / T material médico-hospitalar.
+-- =====================================================================
+-- Obs.: os IDs são informados explicitamente para garantir que as
+-- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
+
+use gestao_emergencia_hospitalar;
+set names utf8mb4;
+
+insert into insumo (id_insumo, nome, tipo, unidade_medida, estoque_minimo) values
+(1, 'Dipirona 500 mg/mL solução injetável 2 mL', 'M', 'ampola', 300),
+(2, 'Dipirona 500 mg comprimido', 'M', 'comprimido', 400),
+(3, 'Dipirona 500 mg/mL gotas 20 mL', 'M', 'frasco', 30),
+(4, 'Paracetamol 750 mg comprimido', 'M', 'comprimido', 300),
+(5, 'Paracetamol 200 mg/mL gotas 15 mL', 'M', 'frasco', 30),
+(6, 'Ibuprofeno 600 mg comprimido', 'M', 'comprimido', 200),
+(7, 'Cetoprofeno 100 mg pó para solução injetável', 'M', 'frasco-ampola', 100),
+(8, 'Diclofenaco sódico 75 mg/3 mL injetável', 'M', 'ampola', 100),
+(9, 'Tramadol 50 mg/mL injetável 2 mL', 'M', 'ampola', 80),
+(10, 'Morfina 10 mg/mL injetável 1 mL', 'M', 'ampola', 50),
+(11, 'Ondansetrona 4 mg/2 mL injetável', 'M', 'ampola', 150),
+(12, 'Metoclopramida 10 mg/2 mL injetável', 'M', 'ampola', 150),
+(13, 'Butilbrometo de escopolamina + dipirona injetável 5 mL', 'M', 'ampola', 150),
+(14, 'Omeprazol 40 mg pó para solução injetável', 'M', 'frasco-ampola', 100),
+(15, 'Ceftriaxona 1 g pó para solução injetável', 'M', 'frasco-ampola', 100),
+(16, 'Azitromicina 500 mg comprimido', 'M', 'comprimido', 100),
+(17, 'Amoxicilina 500 mg cápsula', 'M', 'cápsula', 200),
+(18, 'Amoxicilina 250 mg/5 mL suspensão oral 150 mL', 'M', 'frasco', 30),
+(19, 'Amoxicilina + clavulanato 875/125 mg comprimido', 'M', 'comprimido', 100),
+(20, 'Penicilina G benzatina 1.200.000 UI', 'M', 'frasco-ampola', 40),
+(21, 'Ciprofloxacino 500 mg comprimido', 'M', 'comprimido', 100),
+(22, 'Metronidazol 500 mg/100 mL solução injetável', 'M', 'bolsa', 60),
+(23, 'Piperacilina + tazobactam 4,5 g pó para solução injetável', 'M', 'frasco-ampola', 40),
+(24, 'Cloreto de sódio 0,9% 500 mL (soro fisiológico)', 'M', 'frasco', 400),
+(25, 'Cloreto de sódio 0,9% 10 mL', 'M', 'ampola', 300),
+(26, 'Glicose 5% 500 mL (soro glicosado)', 'M', 'frasco', 150),
+(27, 'Ringer com lactato 500 mL', 'M', 'frasco', 150),
+(28, 'Glicose 50% 10 mL injetável', 'M', 'ampola', 100),
+(29, 'Insulina humana regular 100 UI/mL 10 mL', 'M', 'frasco', 20),
+(30, 'Cloreto de potássio 19,1% 10 mL', 'M', 'ampola', 80),
+(31, 'Captopril 25 mg comprimido', 'M', 'comprimido', 200),
+(32, 'Losartana potássica 50 mg comprimido', 'M', 'comprimido', 200),
+(33, 'Ácido acetilsalicílico 100 mg comprimido', 'M', 'comprimido', 300),
+(34, 'Clopidogrel 75 mg comprimido', 'M', 'comprimido', 100),
+(35, 'Enoxaparina 40 mg/0,4 mL seringa preenchida', 'M', 'seringa', 60),
+(36, 'Furosemida 20 mg/2 mL injetável', 'M', 'ampola', 100),
+(37, 'Hidrocortisona 500 mg pó para solução injetável', 'M', 'frasco-ampola', 80),
+(38, 'Dexametasona 4 mg/mL injetável 2,5 mL', 'M', 'ampola', 100),
+(39, 'Prednisona 20 mg comprimido', 'M', 'comprimido', 150),
+(40, 'Bromidrato de fenoterol 5 mg/mL gotas 20 mL', 'M', 'frasco', 20),
+(41, 'Brometo de ipratrópio 0,25 mg/mL gotas 20 mL', 'M', 'frasco', 20),
+(42, 'Diazepam 10 mg/2 mL injetável', 'M', 'ampola', 50),
+(43, 'Diazepam 5 mg comprimido', 'M', 'comprimido', 100),
+(44, 'Fenitoína 50 mg/mL injetável 5 mL', 'M', 'ampola', 40),
+(45, 'Epinefrina (adrenalina) 1 mg/mL injetável', 'M', 'ampola', 60),
+(46, 'Norepinefrina 4 mg/4 mL injetável', 'M', 'ampola', 40),
+(47, 'Lidocaína 2% sem vasoconstritor 20 mL', 'M', 'frasco-ampola', 60),
+(48, 'Prometazina 25 mg/mL injetável 2 mL', 'M', 'ampola', 60),
+(49, 'Dinitrato de isossorbida 5 mg sublingual', 'M', 'comprimido', 60),
+(50, 'Vacina adsorvida difteria e tétano adulto (dT)', 'M', 'dose', 40),
+(51, 'Tiamina 100 mg/mL injetável', 'M', 'ampola', 40),
+(52, 'Loratadina 10 mg comprimido', 'M', 'comprimido', 100),
+(53, 'Luva de procedimento (par)', 'T', 'par', 1000),
+(54, 'Luva cirúrgica estéril nº 7,5', 'T', 'par', 200),
+(55, 'Seringa descartável 5 mL', 'T', 'unidade', 500),
+(56, 'Seringa descartável 10 mL', 'T', 'unidade', 500),
+(57, 'Agulha descartável 25 x 7', 'T', 'unidade', 500),
+(58, 'Cateter intravenoso periférico 18G', 'T', 'unidade', 100),
+(59, 'Cateter intravenoso periférico 20G', 'T', 'unidade', 200),
+(60, 'Cateter intravenoso periférico 22G', 'T', 'unidade', 200),
+(61, 'Equipo macrogotas', 'T', 'unidade', 300),
+(62, 'Gaze estéril 7,5 x 7,5 cm (pacote com 10)', 'T', 'pacote', 300),
+(63, 'Atadura de crepe 10 cm', 'T', 'rolo', 150),
+(64, 'Atadura gessada 10 cm', 'T', 'rolo', 80),
+(65, 'Fio de sutura nylon 3-0 com agulha', 'T', 'envelope', 80),
+(66, 'Fio de sutura nylon 4-0 com agulha', 'T', 'envelope', 80),
+(67, 'Esparadrapo 10 cm x 4,5 m', 'T', 'rolo', 50),
+(68, 'Fita microporosa 25 mm x 10 m', 'T', 'rolo', 50),
+(69, 'Colar cervical tamanho M', 'T', 'unidade', 15),
+(70, 'Máscara para nebulização adulto', 'T', 'unidade', 100),
+(71, 'Máscara para nebulização infantil', 'T', 'unidade', 60),
+(72, 'Cateter nasal para oxigênio tipo óculos', 'T', 'unidade', 100),
+(73, 'Sonda vesical de demora 16 Fr (Foley)', 'T', 'unidade', 40),
+(74, 'Bolsa coletora de urina sistema fechado', 'T', 'unidade', 40),
+(75, 'Sonda nasogástrica 16 Fr', 'T', 'unidade', 30),
+(76, 'Eletrodo descartável para ECG', 'T', 'unidade', 500),
+(77, 'Tubo endotraqueal 7,5 com balonete', 'T', 'unidade', 15),
+(78, 'Cateter venoso central duplo lúmen', 'T', 'kit', 10),
+(79, 'Dreno de tórax 28 Fr', 'T', 'unidade', 8),
+(80, 'Tala metálica moldável (aramada)', 'T', 'unidade', 30);
+
+-- Conferência
+select count(*) as total_insumo from insumo;

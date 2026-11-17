@@ -1,0 +1,71 @@
+-- =====================================================================
+-- Sistema de Gestão de Emergências e Atendimento Hospitalar
+-- Carga de dados - Tabela: TRANSFERENCIA
+-- Ordem de execução: 36 de 37
+-- Registros: 54
+-- I interna (UTI <-> enfermaria) / E externa (outro hospital).
+-- =====================================================================
+-- Obs.: os IDs são informados explicitamente para garantir que as
+-- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
+
+use gestao_emergencia_hospitalar;
+set names utf8mb4;
+
+insert into transferencia (id_transferencia, id_internacao, id_funcionario, tipo, destino, motivo, data_hora) values
+(1, 2, 76, 'I', 'Enfermaria 204 - leito 204-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-04-05 16:34:39'),
+(2, 5, 211, 'I', 'Enfermaria 202 - leito 202-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-04-07 19:07:53'),
+(3, 20, 228, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-04-13 13:24:43'),
+(4, 16, 208, 'I', 'Enfermaria 206 - leito 206-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-04-13 20:47:57'),
+(5, 24, 228, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-04-17 01:34:24'),
+(6, 30, 284, 'I', 'UTI adulto - leito UTI-08', 'Piora clínica com necessidade de suporte intensivo', '2026-04-22 00:52:32'),
+(7, 34, 271, 'I', 'UTI adulto - leito UTI-07', 'Piora clínica com necessidade de suporte intensivo', '2026-04-22 11:33:18'),
+(8, 36, 271, 'I', 'UTI adulto - leito UTI-10', 'Piora clínica com necessidade de suporte intensivo', '2026-04-23 16:04:01'),
+(9, 43, 279, 'I', 'Enfermaria 205 - leito 205-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-05-04 07:24:59'),
+(10, 53, 103, 'E', 'Hospital de referência em neurocirurgia', 'Avaliação neurocirúrgica de trauma cranioencefálico', '2026-05-07 22:51:47'),
+(11, 55, 18, 'I', 'Enfermaria 204 - leito 204-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-05-11 12:38:36'),
+(12, 57, 242, 'I', 'Enfermaria 202 - leito 202-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-05-15 00:16:59'),
+(13, 71, 76, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-05-28 00:31:38'),
+(14, 95, 208, 'E', 'Hospital de referência em neurocirurgia', 'Avaliação neurocirúrgica de trauma cranioencefálico', '2026-06-14 06:06:47'),
+(15, 91, 208, 'I', 'Enfermaria 206 - leito 206-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-06-14 22:55:41'),
+(16, 99, 257, 'I', 'Enfermaria 201 - leito 201-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-06-19 19:31:58'),
+(17, 96, 211, 'I', 'Enfermaria 203 - leito 203-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-06-24 01:59:17'),
+(18, 114, 279, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-06-24 19:13:23'),
+(19, 107, 208, 'I', 'Enfermaria 207 - leito 207-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-06-26 15:40:29'),
+(20, 116, 137, 'I', 'Enfermaria 201 - leito 201-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-06-29 04:02:50'),
+(21, 132, 296, 'I', 'UTI adulto - leito UTI-09', 'Piora clínica com necessidade de suporte intensivo', '2026-07-11 10:48:44'),
+(22, 135, 207, 'I', 'UTI adulto - leito UTI-02', 'Piora clínica com necessidade de suporte intensivo', '2026-07-14 06:26:03'),
+(23, 131, 208, 'I', 'Enfermaria 207 - leito 207-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-07-14 06:52:14'),
+(24, 137, 242, 'I', 'Enfermaria 206 - leito 206-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-07-14 21:14:07'),
+(25, 146, 242, 'E', 'Hospital de referência em neurocirurgia', 'Avaliação neurocirúrgica de trauma cranioencefálico', '2026-07-16 06:00:30'),
+(26, 147, 211, 'I', 'Enfermaria 202 - leito 202-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-07-19 07:18:24'),
+(27, 149, 242, 'I', 'Enfermaria 204 - leito 204-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-07-21 02:50:30'),
+(28, 156, 257, 'I', 'Enfermaria 201 - leito 201-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-07-27 05:44:10'),
+(29, 161, 242, 'I', 'Enfermaria 204 - leito 204-C', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-01 22:10:47'),
+(30, 172, 208, 'I', 'Enfermaria 207 - leito 207-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-04 09:22:56'),
+(31, 177, 279, 'I', 'Enfermaria 205 - leito 205-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-11 00:52:11'),
+(32, 194, 242, 'I', 'Enfermaria 206 - leito 206-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-16 16:10:29'),
+(33, 189, 207, 'I', 'UTI adulto - leito UTI-03', 'Piora clínica com necessidade de suporte intensivo', '2026-08-18 04:44:07'),
+(34, 185, 208, 'I', 'Enfermaria 205 - leito 205-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-18 18:51:17'),
+(35, 190, 257, 'I', 'Enfermaria 206 - leito 206-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-08-19 22:27:29'),
+(36, 202, 284, 'I', 'UTI adulto - leito UTI-10', 'Piora clínica com necessidade de suporte intensivo', '2026-08-24 23:18:04'),
+(37, 205, 296, 'E', 'Hospital de referência com serviço de endoscopia digestiva', 'Realização de endoscopia digestiva alta de urgência', '2026-08-29 08:48:07'),
+(38, 209, 268, 'I', 'UTI adulto - leito UTI-04', 'Piora clínica com necessidade de suporte intensivo', '2026-09-01 01:55:52'),
+(39, 210, 18, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-09-01 17:37:55'),
+(40, 208, 208, 'I', 'Enfermaria 206 - leito 206-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-09-03 14:56:30'),
+(41, 217, 211, 'I', 'Enfermaria 207 - leito 207-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-09-13 12:22:21'),
+(42, 233, 279, 'I', 'Enfermaria 206 - leito 206-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-01 07:00:08'),
+(43, 251, 271, 'I', 'UTI adulto - leito UTI-02', 'Piora clínica com necessidade de suporte intensivo', '2026-10-10 20:55:47'),
+(44, 252, 76, 'I', 'Enfermaria 207 - leito 207-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-16 01:55:37'),
+(45, 265, 137, 'I', 'Enfermaria 204 - leito 204-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-17 17:02:08'),
+(46, 275, 103, 'I', 'Enfermaria 206 - leito 206-A', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-21 18:27:10'),
+(47, 271, 208, 'I', 'Enfermaria 203 - leito 203-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-23 14:30:55'),
+(48, 280, 208, 'I', 'Enfermaria 201 - leito 201-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-10-27 22:01:18'),
+(49, 292, 268, 'I', 'UTI adulto - leito UTI-05', 'Piora clínica com necessidade de suporte intensivo', '2026-10-31 14:32:40'),
+(50, 290, 279, 'I', 'Enfermaria 201 - leito 201-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-11-03 09:53:46'),
+(51, 303, 242, 'E', 'Hospital de referência em cardiologia (serviço de hemodinâmica)', 'Necessidade de cateterismo cardíaco e angioplastia coronariana', '2026-11-04 01:48:38'),
+(52, 295, 257, 'I', 'Enfermaria 207 - leito 207-B', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-11-04 18:24:37'),
+(53, 315, 103, 'E', 'Hospital de referência em neurocirurgia', 'Avaliação neurocirúrgica de trauma cranioencefálico', '2026-11-13 13:50:44'),
+(54, 312, 18, 'I', 'Enfermaria 203 - leito 203-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-11-15 09:34:47');
+
+-- Conferência
+select * from transferencia;
