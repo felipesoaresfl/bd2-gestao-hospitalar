@@ -1,0 +1,3 @@
+drop database if exists gestao_emergencia_hospitalar;
+create database gestao_emergencia_hospitalar default character set utf8mb4;
+use gestao_emergencia_hospitalar;
