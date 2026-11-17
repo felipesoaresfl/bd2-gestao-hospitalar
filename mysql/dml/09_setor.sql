@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: SETOR
--- Ordem de execução: 09 de 37
--- Registros: 10
--- 10 setores do hospital.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -23,5 +13,4 @@ insert into setor (id_setor, nome, descricao) values
 (9, 'Almoxarifado', 'Recebimento e controle de materiais médico-hospitalares'),
 (10, 'Administração', 'Direção, gestão de pessoas e tecnologia da informação');
 
--- Conferência
 select * from setor;

@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: ENDERECO
--- Ordem de execução: 17 de 37
--- Registros: 2213
--- Endereços de pacientes e funcionários (nunca dos dois ao mesmo tempo).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2234,5 +2224,4 @@ insert into endereco (id_endereco, id_paciente, id_funcionario, cep, logradouro,
 (2212, null, 305, '12280703', 'Rua Carlos Gomes', '3149', 'Apto 53 Bloco D', 'Centro', 'Caçapava', 'SP'),
 (2213, null, 306, '12216184', 'Rua Siqueira Campos', '3255', 'Casa 3', 'Parque Novo Mundo', 'São José dos Campos', 'SP');
 
--- Conferência
 select count(*) as total_endereco from endereco;

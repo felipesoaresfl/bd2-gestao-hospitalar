@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: INSUMO
--- Ordem de execução: 29 de 37
--- Registros: 80
--- M medicamento / T material médico-hospitalar.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -93,5 +83,4 @@ insert into insumo (id_insumo, nome, tipo, unidade_medida, estoque_minimo) value
 (79, 'Dreno de tórax 28 Fr', 'T', 'unidade', 8),
 (80, 'Tala metálica moldável (aramada)', 'T', 'unidade', 30);
 
--- Conferência
 select count(*) as total_insumo from insumo;

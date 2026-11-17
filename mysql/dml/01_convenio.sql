@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CONVENIO
--- Ordem de execução: 01 de 37
--- Registros: 15
--- 15 convênios (13 ativos, 2 inativos).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -28,5 +18,4 @@ insert into convenio (id_convenio, nome, registro_ans, telefone, status) values
 (14, 'Golden Cross', '403911', '08007282001', 'I'),
 (15, 'Prevent Senior', '302147', '08000177070', 'I');
 
--- Conferência
 select * from convenio;

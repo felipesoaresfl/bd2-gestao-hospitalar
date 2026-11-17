@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: EXAME
--- Ordem de execução: 28 de 37
--- Registros: 40
--- Catálogo de exames (prazo_resultado em horas).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -53,5 +43,4 @@ insert into exame (id_exame, id_tipo_exame, nome, preparo, prazo_resultado) valu
 (39, 6, 'Teste rápido de antígeno para COVID-19', 'Coleta de swab nasal', 1),
 (40, 6, 'Teste rápido NS1 para dengue', null, 1);
 
--- Conferência
 select * from exame;

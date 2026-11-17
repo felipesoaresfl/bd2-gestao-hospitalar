@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CADASTRO_PROVISORIO
--- Ordem de execução: 03 de 37
--- Registros: 120
--- Pacientes que chegaram sem identificação (SAMU, bombeiros, polícia).
--- Os identificados apontam para o cadastro definitivo criado na identificação.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -134,5 +123,4 @@ insert into cadastro_provisorio (id_cadastro_provisorio, identificacao, sexo_apa
 (119, 'Desconhecido 119', 'M', 51, 'Homem branco, idoso, cabelos brancos, camisa xadrez e aliança na mão esquerda', 'Rodovia Presidente Dutra, km 150 - Corpo de Bombeiros', '2026-11-16 07:03:00', null, null),
 (120, 'Desconhecido 120', 'M', 81, 'Homem branco, idoso, cabelos brancos, camisa xadrez e aliança na mão esquerda', 'Ponto de ônibus na Avenida Cidade Jardim - SAMU', '2026-11-16 09:12:47', null, null);
 
--- Conferência
 select count(*) as total_cadastro_provisorio from cadastro_provisorio;

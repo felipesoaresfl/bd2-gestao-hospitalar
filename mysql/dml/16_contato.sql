@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CONTATO
--- Ordem de execução: 16 de 37
--- Registros: 4087
--- Contatos de pacientes e funcionários (nunca dos dois ao mesmo tempo).
--- tipo: C celular / F fixo / E e-mail.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -4117,5 +4106,4 @@ insert into contato (id_contato, id_paciente, id_funcionario, tipo, valor, nome_
 (4086, null, 306, 'E', 'viviane81@gmail.com', null, 'N'),
 (4087, null, 306, 'C', '12977553463', 'Sebastião Couto (contato de emergência)', 'N');
 
--- Conferência
 select count(*) as total_contato from contato;

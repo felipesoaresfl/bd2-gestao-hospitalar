@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: SOLICITACAO
--- Ordem de execução: 31 de 37
--- Registros: 11549
--- Cada linha pede um único item (P procedimento / E exame / I insumo), coerente com o quadro clínico.
--- status: P pendente / E em execução / R realizada / C cancelada.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -11609,5 +11598,4 @@ insert into solicitacao (id_solicitacao, id_atendimento, id_funcionario, tipo, i
 (11548, 2196, 126, 'I', null, null, 59, 1, 'U', 'R', '2026-11-16 09:46:26', null),
 (11549, 2196, 126, 'I', null, null, 24, 1, 'U', 'R', '2026-11-16 09:48:26', 'EV em infusão contínua');
 
--- Conferência
 select count(*) as total_solicitacao from solicitacao;

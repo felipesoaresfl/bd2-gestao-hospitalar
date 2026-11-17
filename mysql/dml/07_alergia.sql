@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: ALERGIA
--- Ordem de execução: 07 de 37
--- Registros: 555
--- tipo: M medicamento / A alimento / O outros; gravidade: L / M / G.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -570,5 +560,4 @@ insert into alergia (id_alergia, id_historico, agente, tipo, gravidade, reacao) 
 (554, 1798, 'Dipirona', 'M', 'L', 'Edema de lábios e pálpebras'),
 (555, 1799, 'Amendoim', 'A', 'M', 'Urticária e vômitos');
 
--- Conferência
 select count(*) as total_alergia from alergia;

@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CIRURGIA
--- Ordem de execução: 06 de 37
--- Registros: 607
--- Cirurgias prévias e cirurgias de urgência feitas após internação neste hospital.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -622,5 +612,4 @@ insert into cirurgia (id_cirurgia, id_historico, descricao, data_cirurgia, hospi
 (606, 1798, 'Angioplastia coronariana com stent', null, 'Hospital de Emergência do Vale', 'Realizada pelo SUS'),
 (607, 1798, 'Colecistectomia videolaparoscópica', '2015-05-06', 'Santa Casa de Jacareí', 'Realizada pelo convênio');
 
--- Conferência
 select count(*) as total_cirurgia from cirurgia;

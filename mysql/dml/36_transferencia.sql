@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: TRANSFERENCIA
--- Ordem de execução: 36 de 37
--- Registros: 54
--- I interna (UTI <-> enfermaria) / E externa (outro hospital).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -67,5 +57,4 @@ insert into transferencia (id_transferencia, id_internacao, id_funcionario, tipo
 (53, 315, 103, 'E', 'Hospital de referência em neurocirurgia', 'Avaliação neurocirúrgica de trauma cranioencefálico', '2026-11-13 13:50:44'),
 (54, 312, 18, 'I', 'Enfermaria 203 - leito 203-D', 'Melhora clínica, sem necessidade de suporte intensivo', '2026-11-15 09:34:47');
 
--- Conferência
 select * from transferencia;

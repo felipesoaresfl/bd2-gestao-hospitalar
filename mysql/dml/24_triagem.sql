@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: TRIAGEM
--- Ordem de execução: 24 de 37
--- Registros: 2198
--- Uma triagem por atendimento, feita por enfermeiro.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2219,5 +2209,4 @@ insert into triagem (id_triagem, id_atendimento, id_funcionario, id_classificaca
 (2197, 2197, 138, 2, '2026-11-16 09:43:33', 'Paciente refere: dor no peito em pontada que piora ao respirar fundo.', 'Alergia referida: dipirona.'),
 (2198, 2199, 1, 4, '2026-11-16 09:56:46', 'Paciente refere: dificuldade para engolir e febre há 3 dias.', 'Acompanhado pela avó.');
 
--- Conferência
 select count(*) as total_triagem from triagem;

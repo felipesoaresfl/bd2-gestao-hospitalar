@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: PROCEDIMENTO
--- Ordem de execução: 26 de 37
--- Registros: 40
--- Catálogo de procedimentos (código no formato SIGTAP, valores de referência).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -53,5 +43,4 @@ insert into procedimento (id_procedimento, codigo, nome, descricao, valor) value
 (39, '0401548370', 'Desbridamento de ferida', 'Retirada de tecido necrótico', 75.00),
 (40, '0303370302', 'Curativo de queimadura', 'Limpeza e curativo de queimadura de pequena extensão', 32.00);
 
--- Conferência
 select * from procedimento;

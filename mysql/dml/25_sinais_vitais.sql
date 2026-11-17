@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: SINAIS_VITAIS
--- Ordem de execução: 25 de 37
--- Registros: 5988
--- 1ª aferição na triagem; reavaliações no PS e aferições a cada ~12 h nas internações.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -6023,5 +6013,4 @@ insert into sinais_vitais (id_sinais_vitais, id_atendimento, id_funcionario, dat
 (5987, 2197, 138, '2026-11-16 09:43:33', 111, 83, 92, 18, 36.6, 96, 125, 4),
 (5988, 2199, 1, '2026-11-16 09:56:46', 96, 65, 99, 22, 38.1, 98, 118, 1);
 
--- Conferência
 select count(*) as total_sinais_vitais from sinais_vitais;

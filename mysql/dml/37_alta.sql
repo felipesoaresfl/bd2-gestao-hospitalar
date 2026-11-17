@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: ALTA
--- Ordem de execução: 37 de 37
--- Registros: 2167
--- tipo: M médica / P a pedido / T transferência / O óbito / E evasão.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2188,5 +2178,4 @@ insert into alta (id_alta, id_atendimento, id_funcionario, data_hora, tipo, cid_
 (2166, 2163, 243, '2026-11-16 09:38:47', 'M', 'A09', 'Hidratação oral frequente com soro de reidratação oral. Alimentação leve e fracionada. Retornar se houver sangue nas fezes, febre alta ou sinais de desidratação.'),
 (2167, 2175, 92, '2026-11-16 09:53:39', 'M', 'F10.0', 'Encaminhado ao CAPS para acompanhamento. Evitar o consumo de bebidas alcoólicas.');
 
--- Conferência
 select count(*) as total_alta from alta;

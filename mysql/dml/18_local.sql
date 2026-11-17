@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: LOCAL
--- Ordem de execução: 18 de 37
--- Registros: 44
--- R recepção / T triagem / C consultório / E emergência / X exames / I enfermaria-internação / U UTI.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -57,5 +47,4 @@ insert into local (id_local, nome, tipo, andar) values
 (43, 'UTI adulto', 'U', '3º andar'),
 (44, 'UTI coronariana', 'U', '3º andar');
 
--- Conferência
 select * from local;

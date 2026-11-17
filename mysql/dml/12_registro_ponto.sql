@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: REGISTRO_PONTO
--- Ordem de execução: 12 de 37
--- Registros: 2822
--- Marcações dos últimos 10 dias: plantões 12x36 (7h-19h / 19h-7h) e horário administrativo.
--- Plantões em andamento têm só a entrada.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2846,5 +2835,4 @@ insert into registro_ponto (id_registro_ponto, id_funcionario, data_hora, tipo) 
 (2821, 232, '2026-11-16 08:03:00', 'E'),
 (2822, 180, '2026-11-16 08:06:19', 'E');
 
--- Conferência
 select count(*) as total_registro_ponto from registro_ponto;

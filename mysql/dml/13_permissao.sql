@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: PERMISSAO
--- Ordem de execução: 13 de 37
--- Registros: 25
--- Permissões de acesso às funções do sistema.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -38,5 +28,4 @@ insert into permissao (id_permissao, nome, descricao) values
 (24, 'VER_PAINEL_ATENDIMENTO', 'Visualizar o painel de pacientes em atendimento'),
 (25, 'REGISTRAR_PONTO', 'Registrar marcações de entrada e saída');
 
--- Conferência
 select * from permissao;

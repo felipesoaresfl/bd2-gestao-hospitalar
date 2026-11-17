@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: EQUIPAMENTO
--- Ordem de execução: 19 de 37
--- Registros: 235
--- status: D disponível / U em uso / M manutenção / I inativo.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -248,5 +238,4 @@ insert into equipamento (id_equipamento, id_local, nome, numero_patrimonio, stat
 (234, 44, 'Carrinho de emergência', 'PAT-2020-00234', 'D'),
 (235, 44, 'Marca-passo provisório externo', 'PAT-2021-00235', 'D');
 
--- Conferência
 select count(*) as total_equipamento from equipamento;

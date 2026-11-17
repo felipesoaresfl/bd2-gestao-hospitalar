@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: PACIENTE
--- Ordem de execução: 02 de 37
--- Registros: 1800
--- Pacientes do Vale do Paraíba; CPF com dígito verificador válido.
--- status O = óbito registrado na alta; I = cadastro antigo inativo.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -1820,5 +1809,4 @@ insert into paciente (id_paciente, nome, cpf, data_nasc, sexo, nome_mae, cartao_
 (1799, 'Sandra Fonseca Vieira', '82124727443', '2021-09-20', 'F', 'Terezinha Moraes Fonseca', '892300401211036', 'A+', 6, '0956857336425', '2026-11-16 09:48:00', 'A'),
 (1800, 'Denise Camargo Araújo', '81440877556', '1947-09-05', 'F', 'Natália Tavares Camargo', '706482875574974', null, 6, '4707287484367', '2026-11-16 09:52:00', 'A');
 
--- Conferência
 select count(*) as total_paciente from paciente;

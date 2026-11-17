@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: LEITO
--- Ordem de execução: 20 de 37
--- Registros: 65
--- Situação no momento da carga (16/11/2026 10:00): O = ocupado por internação ativa.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -78,5 +68,4 @@ insert into leito (id_leito, id_local, numero, tipo, status) values
 (64, 44, 'UCO-05', 'U', 'L'),
 (65, 44, 'UCO-06', 'U', 'L');
 
--- Conferência
 select count(*) as total_leito from leito;

@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: FUNCIONARIO_PERMISSAO
--- Ordem de execução: 15 de 37
--- Registros: 152
--- Permissões extras concedidas além das do cargo.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -165,5 +155,4 @@ insert into funcionario_permissao (id_funcionario, id_permissao, data_concessao)
 (302, 19, '2026-08-31 09:33:30'),
 (306, 19, '2026-11-06 10:30:30');
 
--- Conferência
 select count(*) as total_funcionario_permissao from funcionario_permissao;

@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: OCUPACAO
--- Ordem de execução: 35 de 37
--- Registros: 365
--- Histórico de leitos por internação; um leito nunca tem duas ocupações ao mesmo tempo.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -378,5 +368,4 @@ insert into ocupacao (id_ocupacao, id_internacao, id_leito, data_hora_entrada, d
 (364, 321, 38, '2026-11-15 23:01:58', null),
 (365, 322, 43, '2026-11-16 08:49:17', null);
 
--- Conferência
 select count(*) as total_ocupacao from ocupacao;

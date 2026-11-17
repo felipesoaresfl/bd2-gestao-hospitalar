@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: MOVIMENTACAO_ESTOQUE
--- Ordem de execução: 33 de 37
--- Registros: 7404
--- Compras trimestrais na central, reposição mensal dos satélites, saídas por solicitação e ajustes.
--- tipo: E entrada / S saída / A ajuste (perda, avaria).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -7446,5 +7435,4 @@ insert into movimentacao_estoque (id_movimentacao, id_insumo, id_estoque, id_fun
 (7403, 59, 5, 300, 11548, 'S', 1, 'CAT2609644', '2028-09-27', '2026-11-16 09:50:26'),
 (7404, 24, 2, 19, 11549, 'S', 1, 'SF52609990', '2028-06-15', '2026-11-16 09:51:26');
 
--- Conferência
 select count(*) as total_movimentacao_estoque from movimentacao_estoque;

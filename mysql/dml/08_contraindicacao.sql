@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CONTRAINDICACAO
--- Ordem de execução: 08 de 37
--- Registros: 528
--- Derivadas das alergias e das doenças do paciente (ex.: doença renal crônica x AINEs).
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -543,5 +533,4 @@ insert into contraindicacao (id_contraindicacao, id_historico, descricao, motivo
 (527, 1788, 'Tramadol', 'Epilepsia - reduz o limiar convulsivo'),
 (528, 1800, 'Anti-inflamatórios não esteroidais (AINEs)', 'Insuficiência cardíaca - risco de retenção de líquidos');
 
--- Conferência
 select count(*) as total_contraindicacao from contraindicacao;

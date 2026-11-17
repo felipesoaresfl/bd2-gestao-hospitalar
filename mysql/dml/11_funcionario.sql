@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: FUNCIONARIO
--- Ordem de execução: 11 de 37
--- Registros: 306
--- Senha armazenada como hash SHA-256 (nunca em texto puro).
--- status: A ativo / I inativo / F afastado.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -320,5 +309,4 @@ insert into funcionario (id_funcionario, id_cargo, nome, cpf, data_nasc, sexo, r
 (305, 12, 'Letícia Galvão Dias', '10547709560', '1975-11-11', 'F', 'CRM-SP 149376', '2026-09-24', 'leticia.dias@hev.com.br', 'leticia.dias', 'bbe19f97893657f26a5e3cabb39fc565bd467439ca0bac16ce5a5e3a44dfb542', 'A'),
 (306, 14, 'Viviane Toledo Couto', '02804648869', '1998-03-08', 'F', null, '2026-10-07', 'viviane.couto@hev.com.br', 'viviane.couto', 'b668bd5d704a73dd43490a737a8d1106c838fb456764caeea649b44d23225116', 'A');
 
--- Conferência
 select count(*) as total_funcionario from funcionario;

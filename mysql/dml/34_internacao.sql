@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: INTERNACAO
--- Ordem de execução: 34 de 37
--- Registros: 323
--- tipo: C clínica / R cirúrgica / U UTI; status: A ativa / E encerrada.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -336,5 +326,4 @@ insert into internacao (id_internacao, id_atendimento, id_funcionario, data_hora
 (322, 2177, 271, '2026-11-16 08:38:17', null, 'Pneumonia com necessidade de antibioticoterapia endovenosa e oxigênio', 'C', 'A'),
 (323, 2185, 283, '2026-11-16 09:10:51', null, 'Politraumatismo - suporte intensivo e tratamento cirúrgico', 'R', 'A');
 
--- Conferência
 select count(*) as total_internacao from internacao;

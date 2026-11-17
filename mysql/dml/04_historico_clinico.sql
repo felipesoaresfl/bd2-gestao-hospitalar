@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: HISTORICO_CLINICO
--- Ordem de execução: 04 de 37
--- Registros: 1800
--- Um histórico por paciente, coerente com as doenças registradas.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -1819,5 +1809,4 @@ insert into historico_clinico (id_historico, id_paciente, observacoes, data_cria
 (1799, 1799, 'Sem comorbidades. Vacinação em dia.', '2026-11-16 09:48:00'),
 (1800, 1800, 'Comorbidades: insuficiência cardíaca congestiva, enxaqueca. Em uso contínuo de espironolactona 25 mg/dia e furosemida; propranolol 40 mg/dia (profilaxia). Nega tabagismo e etilismo.', '2026-11-16 09:52:00');
 
--- Conferência
 select count(*) as total_historico_clinico from historico_clinico;

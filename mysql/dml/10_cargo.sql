@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CARGO
--- Ordem de execução: 10 de 37
--- Registros: 21
--- Cargos e o setor de cada um.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -34,5 +24,4 @@ insert into cargo (id_cargo, id_setor, nome, descricao) values
 (20, 10, 'Diretor clínico', 'Responsável técnico pela assistência médica do hospital'),
 (21, 10, 'Analista administrativo', 'Gestão de cadastros, relatórios, equipamentos e acessos ao sistema');
 
--- Conferência
 select * from cargo;

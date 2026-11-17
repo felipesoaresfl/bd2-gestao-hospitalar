@@ -1,14 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: ATENDIMENTO
--- Ordem de execução: 23 de 37
--- Registros: 2200
--- Entradas de 01/04/2026 a 16/11/2026 10:00. Atendimentos recentes ainda em andamento.
--- tipo_entrada: E espontânea / A ambulância-SAMU / B bombeiros-polícia / T transferência.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2222,5 +2211,4 @@ insert into atendimento (id_atendimento, id_paciente, id_cadastro_provisorio, id
 (2199, 309, null, 140, 2, 2, '2026-11-16 09:53:00', 'E', 'Dificuldade para engolir e febre há 3 dias'),
 (2200, 1800, null, 33, 1, 1, '2026-11-16 09:56:00', 'B', 'Dor ao urinar e urina com cheiro forte há 4 dias');
 
--- Conferência
 select count(*) as total_atendimento from atendimento;

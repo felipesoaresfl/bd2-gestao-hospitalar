@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: CARGO_PERMISSAO
--- Ordem de execução: 14 de 37
--- Registros: 146
--- Permissões padrão de cada cargo.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -159,5 +149,4 @@ insert into cargo_permissao (id_cargo, id_permissao) values
 (21, 23),
 (21, 25);
 
--- Conferência
 select count(*) as total_cargo_permissao from cargo_permissao;

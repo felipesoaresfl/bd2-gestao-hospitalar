@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: RESULTADO_EXAME
--- Ordem de execução: 32 de 37
--- Registros: 4669
--- Laudos das solicitações de exame realizadas. situacao: N normal / A alterado / C crítico.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -4700,5 +4690,4 @@ insert into resultado_exame (id_resultado, id_solicitacao, id_funcionario, data_
 (4668, 11517, 246, '2026-11-16 08:11:42', '2026-11-16 09:52:42', 'Potássio: 4,1 mEq/L (VR: 3,5 a 5,1 mEq/L).', 'laudos/2026/11/LAB-011517.pdf', 'N'),
 (4669, 11547, 126, '2026-11-16 09:53:26', '2026-11-16 09:59:26', 'Ritmo sinusal, FC 73 bpm, eixo elétrico normal. Sem alterações de repolarização ventricular.', 'laudos/2026/11/CARD-011547.pdf', 'N');
 
--- Conferência
 select count(*) as total_resultado_exame from resultado_exame;

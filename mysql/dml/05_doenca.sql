@@ -1,13 +1,3 @@
--- =====================================================================
--- Sistema de Gestão de Emergências e Atendimento Hospitalar
--- Carga de dados - Tabela: DOENCA
--- Ordem de execução: 05 de 37
--- Registros: 2554
--- Doenças crônicas e prévias; diagnósticos feitos no pronto-socorro também entram aqui.
--- =====================================================================
--- Obs.: os IDs são informados explicitamente para garantir que as
--- chaves estrangeiras dos próximos arquivos apontem para o registro certo.
-
 use gestao_emergencia_hospitalar;
 set names utf8mb4;
 
@@ -2577,5 +2567,4 @@ insert into doenca (id_doenca, id_historico, nome, cid, data_diagnostico, cronic
 (2553, 1800, 'Insuficiência cardíaca congestiva', 'I50.0', '2026-03-09', 'S', 'Acompanhamento na UBS'),
 (2554, 1800, 'Enxaqueca', 'G43.9', '1970-12-01', 'S', 'Controle irregular segundo o paciente');
 
--- Conferência
 select count(*) as total_doenca from doenca;
