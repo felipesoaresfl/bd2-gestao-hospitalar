@@ -1,0 +1,1540 @@
+[
+  {
+    "codigo_intercorrencia": "INT-2026-000001",
+    "id_atendimento": 2,
+    "id_paciente": 853,
+    "id_cadastro_provisorio": null,
+    "id_local": 35,
+    "data_hora": {
+      "$date": "2026-04-01T17:44:00Z"
+    },
+    "categoria": "METABOLICA",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Glicemia capilar de 42 mg/dL com sudorese e tremores.",
+    "responsavel": {
+      "id_funcionario": 207,
+      "login": "rafael.cardoso",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Glicemia capilar de controle",
+        "hora": {
+          "$date": "2026-04-01T17:49:17Z"
+        },
+        "executado_por_id_funcionario": 150
+      },
+      {
+        "ordem": 2,
+        "acao": "Glicose 50% 30 mL EV",
+        "hora": {
+          "$date": "2026-04-01T17:51:16Z"
+        },
+        "executado_por_id_funcionario": 150
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-04-01T21:25:16Z"
+    },
+    "tags": [
+      "glicemia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000048",
+    "id_atendimento": 79,
+    "id_paciente": 109,
+    "id_cadastro_provisorio": null,
+    "id_local": 44,
+    "data_hora": {
+      "$date": "2026-04-10T20:04:02Z"
+    },
+    "categoria": "DOR",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Dor intensa (EVA 8/10) refratária à analgesia inicial.",
+    "responsavel": {
+      "id_funcionario": 127,
+      "login": "sonia.lima",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Reavaliação da dor",
+        "hora": {
+          "$date": "2026-04-10T20:09:10Z"
+        },
+        "executado_por_id_funcionario": 127
+      },
+      {
+        "ordem": 2,
+        "acao": "Analgesia de resgate conforme prescrição",
+        "hora": {
+          "$date": "2026-04-10T20:13:47Z"
+        },
+        "executado_por_id_funcionario": 127
+      },
+      {
+        "ordem": 3,
+        "acao": "Comunicação ao médico",
+        "hora": {
+          "$date": "2026-04-10T20:18:14Z"
+        },
+        "executado_por_id_funcionario": 127
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-04-10T21:05:14Z"
+    },
+    "tags": [
+      "dor",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000095",
+    "id_atendimento": 82,
+    "id_paciente": 894,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-04-16T05:50:55Z"
+    },
+    "categoria": "AGITACAO",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Agitação psicomotora com tentativa de retirar dispositivos.",
+    "responsavel": {
+      "id_funcionario": 120,
+      "login": "maria.araujo",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Abordagem verbal e redução de estímulos",
+        "hora": {
+          "$date": "2026-04-16T05:51:39Z"
+        },
+        "executado_por_id_funcionario": 120
+      },
+      {
+        "ordem": 2,
+        "acao": "Haloperidol 5 mg IM conforme prescrição",
+        "hora": {
+          "$date": "2026-04-16T05:57:39Z"
+        },
+        "executado_por_id_funcionario": 120
+      },
+      {
+        "ordem": 3,
+        "acao": "Contenção mecânica temporária conforme protocolo",
+        "hora": {
+          "$date": "2026-04-16T06:01:05Z"
+        },
+        "executado_por_id_funcionario": 120
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-04-16T08:03:05Z"
+    },
+    "tags": [
+      "agitacao",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000142",
+    "id_atendimento": 188,
+    "id_paciente": 83,
+    "id_cadastro_provisorio": null,
+    "id_local": 42,
+    "data_hora": {
+      "$date": "2026-04-23T09:19:36Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Dispneia intensa com uso de musculatura acessória e saturação de 89%.",
+    "responsavel": {
+      "id_funcionario": 271,
+      "login": "leonardo.brandao",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-04-23T09:22:51Z"
+        },
+        "executado_por_id_funcionario": 8
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-04-23T09:24:43Z"
+        },
+        "executado_por_id_funcionario": 8
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-04-23T09:27:09Z"
+        },
+        "executado_por_id_funcionario": 271
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-04-23T12:15:09Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000189",
+    "id_atendimento": 196,
+    "id_paciente": 951,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-05-02T00:15:43Z"
+    },
+    "categoria": "DOR",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Dor intensa (EVA 9/10) refratária à analgesia inicial.",
+    "responsavel": {
+      "id_funcionario": 37,
+      "login": "maria.nunes",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Reavaliação da dor",
+        "hora": {
+          "$date": "2026-05-02T00:17:52Z"
+        },
+        "executado_por_id_funcionario": 37
+      },
+      {
+        "ordem": 2,
+        "acao": "Analgesia de resgate conforme prescrição",
+        "hora": {
+          "$date": "2026-05-02T00:21:24Z"
+        },
+        "executado_por_id_funcionario": 37
+      },
+      {
+        "ordem": 3,
+        "acao": "Comunicação ao médico",
+        "hora": {
+          "$date": "2026-05-02T00:22:17Z"
+        },
+        "executado_por_id_funcionario": 37
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-05-02T02:01:17Z"
+    },
+    "tags": [
+      "dor",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000236",
+    "id_atendimento": 362,
+    "id_paciente": 104,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-05-13T00:29:08Z"
+    },
+    "categoria": "FEBRE",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Pico febril de 38.9 °C com calafrios.",
+    "responsavel": {
+      "id_funcionario": 216,
+      "login": "joao.siqueira",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Antitérmico conforme prescrição",
+        "hora": {
+          "$date": "2026-05-13T00:31:18Z"
+        },
+        "executado_por_id_funcionario": 216
+      },
+      {
+        "ordem": 2,
+        "acao": "Coleta de hemoculturas",
+        "hora": {
+          "$date": "2026-05-13T00:36:02Z"
+        },
+        "executado_por_id_funcionario": 216
+      },
+      {
+        "ordem": 3,
+        "acao": "Compressas frias",
+        "hora": {
+          "$date": "2026-05-13T00:38:20Z"
+        },
+        "executado_por_id_funcionario": 216
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-05-13T02:29:20Z"
+    },
+    "tags": [
+      "febre",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000283",
+    "id_atendimento": 387,
+    "id_paciente": null,
+    "id_cadastro_provisorio": 20,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-05-21T19:58:42Z"
+    },
+    "categoria": "NEUROLOGICA",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Rebaixamento do nível de consciência (Glasgow 12).",
+    "responsavel": {
+      "id_funcionario": 242,
+      "login": "geraldo.medeiros",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Proteção das vias aéreas e lateralização",
+        "hora": {
+          "$date": "2026-05-21T20:04:37Z"
+        },
+        "executado_por_id_funcionario": 21
+      },
+      {
+        "ordem": 2,
+        "acao": "Glicemia capilar",
+        "hora": {
+          "$date": "2026-05-21T20:07:36Z"
+        },
+        "executado_por_id_funcionario": 21
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-05-21T23:00:36Z"
+    },
+    "tags": [
+      "neurologico",
+      "uti",
+      "paciente_nao_identificado"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000330",
+    "id_atendimento": 421,
+    "id_paciente": 1007,
+    "id_cadastro_provisorio": null,
+    "id_local": 44,
+    "data_hora": {
+      "$date": "2026-05-28T02:34:10Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda súbita de saturação de O2 para 86% com desconforto respiratório.",
+    "responsavel": {
+      "id_funcionario": 279,
+      "login": "ana.prado",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-05-28T02:38:11Z"
+        },
+        "executado_por_id_funcionario": 37
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-05-28T02:43:09Z"
+        },
+        "executado_por_id_funcionario": 37
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-05-28T04:09:09Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000377",
+    "id_atendimento": 583,
+    "id_paciente": 547,
+    "id_cadastro_provisorio": null,
+    "id_local": 19,
+    "data_hora": {
+      "$date": "2026-06-06T13:23:02Z"
+    },
+    "categoria": "AGITACAO",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Agitação psicomotora com tentativa de retirar dispositivos.",
+    "responsavel": {
+      "id_funcionario": 158,
+      "login": "leticia.diniz",
+      "cargo": "Enfermeiro"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Abordagem verbal e redução de estímulos",
+        "hora": {
+          "$date": "2026-06-06T13:28:25Z"
+        },
+        "executado_por_id_funcionario": 158
+      },
+      {
+        "ordem": 2,
+        "acao": "Haloperidol 5 mg IM conforme prescrição",
+        "hora": {
+          "$date": "2026-06-06T13:29:26Z"
+        },
+        "executado_por_id_funcionario": 158
+      },
+      {
+        "ordem": 3,
+        "acao": "Contenção mecânica temporária conforme protocolo",
+        "hora": {
+          "$date": "2026-06-06T13:34:51Z"
+        },
+        "executado_por_id_funcionario": 158
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-06-06T17:14:51Z"
+    },
+    "tags": [
+      "agitacao"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000424",
+    "id_atendimento": 564,
+    "id_paciente": 762,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-06-12T04:58:44Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda súbita de saturação de O2 para 82% com desconforto respiratório.",
+    "responsavel": {
+      "id_funcionario": 18,
+      "login": "mariana.sampaio",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-06-12T05:02:24Z"
+        },
+        "executado_por_id_funcionario": 90
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-06-12T05:06:18Z"
+        },
+        "executado_por_id_funcionario": 90
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-06-12T05:08:22Z"
+        },
+        "executado_por_id_funcionario": 18
+      },
+      {
+        "ordem": 4,
+        "acao": "Nebulização com broncodilatador",
+        "hora": {
+          "$date": "2026-06-12T05:12:34Z"
+        },
+        "executado_por_id_funcionario": 90
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-06-12T08:58:34Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000471",
+    "id_atendimento": 657,
+    "id_paciente": 1187,
+    "id_cadastro_provisorio": 38,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-06-18T22:54:49Z"
+    },
+    "categoria": "HEMODINAMICA",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda da pressão arterial para 78x42 mmHg e sonolência.",
+    "responsavel": {
+      "id_funcionario": 257,
+      "login": "gustavo.leite",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Expansão volêmica com SF 0,9% 500 mL",
+        "hora": {
+          "$date": "2026-06-18T22:57:56Z"
+        },
+        "executado_por_id_funcionario": 241
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação dos membros inferiores",
+        "hora": {
+          "$date": "2026-06-18T23:03:56Z"
+        },
+        "executado_por_id_funcionario": 241
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-06-18T23:53:56Z"
+    },
+    "tags": [
+      "hipotensao",
+      "instabilidade_hemodinamica",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000518",
+    "id_atendimento": 759,
+    "id_paciente": 420,
+    "id_cadastro_provisorio": null,
+    "id_local": 20,
+    "data_hora": {
+      "$date": "2026-06-24T01:14:03Z"
+    },
+    "categoria": "CARDIOVASCULAR",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Dor torácica em aperto com frequência cardíaca de 163 bpm.",
+    "responsavel": {
+      "id_funcionario": 112,
+      "login": "amanda.salgado",
+      "cargo": "Médico plantonista clínico"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Monitorização cardíaca contínua",
+        "hora": {
+          "$date": "2026-06-24T01:19:11Z"
+        },
+        "executado_por_id_funcionario": 39
+      },
+      {
+        "ordem": 2,
+        "acao": "Eletrocardiograma de 12 derivações",
+        "hora": {
+          "$date": "2026-06-24T01:23:41Z"
+        },
+        "executado_por_id_funcionario": 39
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-06-24T01:49:41Z"
+    },
+    "tags": [
+      "taquicardia",
+      "monitorizacao"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000565",
+    "id_atendimento": 771,
+    "id_paciente": 1239,
+    "id_cadastro_provisorio": null,
+    "id_local": 33,
+    "data_hora": {
+      "$date": "2026-07-01T10:54:57Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda súbita de saturação de O2 para 89% com desconforto respiratório.",
+    "responsavel": {
+      "id_funcionario": 271,
+      "login": "leonardo.brandao",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-07-01T10:59:49Z"
+        },
+        "executado_por_id_funcionario": 269
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-07-01T11:01:47Z"
+        },
+        "executado_por_id_funcionario": 269
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-07-01T11:06:07Z"
+        },
+        "executado_por_id_funcionario": 271
+      },
+      {
+        "ordem": 4,
+        "acao": "Nebulização com broncodilatador",
+        "hora": {
+          "$date": "2026-07-01T11:09:33Z"
+        },
+        "executado_por_id_funcionario": 269
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-07-01T12:11:33Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000612",
+    "id_atendimento": 882,
+    "id_paciente": 864,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-07-10T14:35:51Z"
+    },
+    "categoria": "DOR",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Dor intensa (EVA 10/10) refratária à analgesia inicial.",
+    "responsavel": {
+      "id_funcionario": 241,
+      "login": "jessica.queiroz",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Reavaliação da dor",
+        "hora": {
+          "$date": "2026-07-10T14:37:26Z"
+        },
+        "executado_por_id_funcionario": 241
+      },
+      {
+        "ordem": 2,
+        "acao": "Analgesia de resgate conforme prescrição",
+        "hora": {
+          "$date": "2026-07-10T14:39:21Z"
+        },
+        "executado_por_id_funcionario": 241
+      },
+      {
+        "ordem": 3,
+        "acao": "Comunicação ao médico",
+        "hora": {
+          "$date": "2026-07-10T14:42:11Z"
+        },
+        "executado_por_id_funcionario": 241
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-07-10T17:56:11Z"
+    },
+    "tags": [
+      "dor",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000659",
+    "id_atendimento": 926,
+    "id_paciente": 1210,
+    "id_cadastro_provisorio": null,
+    "id_local": 38,
+    "data_hora": {
+      "$date": "2026-07-16T07:56:23Z"
+    },
+    "categoria": "ACESSO_VENOSO",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Perda do acesso venoso periférico com infiltração no antebraço.",
+    "responsavel": {
+      "id_funcionario": 43,
+      "login": "pedro.bueno",
+      "cargo": "Técnico de enfermagem"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Retirada do cateter",
+        "hora": {
+          "$date": "2026-07-16T08:01:09Z"
+        },
+        "executado_por_id_funcionario": 43
+      },
+      {
+        "ordem": 2,
+        "acao": "Nova punção em membro contralateral",
+        "hora": {
+          "$date": "2026-07-16T08:05:50Z"
+        },
+        "executado_por_id_funcionario": 43
+      },
+      {
+        "ordem": 3,
+        "acao": "Compressa fria no local",
+        "hora": {
+          "$date": "2026-07-16T08:11:37Z"
+        },
+        "executado_por_id_funcionario": 43
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-07-16T11:46:37Z"
+    },
+    "tags": [
+      "acesso_venoso"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000706",
+    "id_atendimento": 1030,
+    "id_paciente": 933,
+    "id_cadastro_provisorio": null,
+    "id_local": 33,
+    "data_hora": {
+      "$date": "2026-07-23T08:43:47Z"
+    },
+    "categoria": "FEBRE",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Pico febril de 38.1 °C com calafrios.",
+    "responsavel": {
+      "id_funcionario": 43,
+      "login": "pedro.bueno",
+      "cargo": "Técnico de enfermagem"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Antitérmico conforme prescrição",
+        "hora": {
+          "$date": "2026-07-23T08:49:10Z"
+        },
+        "executado_por_id_funcionario": 43
+      },
+      {
+        "ordem": 2,
+        "acao": "Coleta de hemoculturas",
+        "hora": {
+          "$date": "2026-07-23T08:49:47Z"
+        },
+        "executado_por_id_funcionario": 43
+      },
+      {
+        "ordem": 3,
+        "acao": "Compressas frias",
+        "hora": {
+          "$date": "2026-07-23T08:54:55Z"
+        },
+        "executado_por_id_funcionario": 43
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-07-23T10:58:55Z"
+    },
+    "tags": [
+      "febre"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000753",
+    "id_atendimento": 1059,
+    "id_paciente": 1377,
+    "id_cadastro_provisorio": null,
+    "id_local": 36,
+    "data_hora": {
+      "$date": "2026-08-02T05:29:22Z"
+    },
+    "categoria": "NEUROLOGICA",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Rebaixamento do nível de consciência (Glasgow 8).",
+    "responsavel": {
+      "id_funcionario": 242,
+      "login": "geraldo.medeiros",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Proteção das vias aéreas e lateralização",
+        "hora": {
+          "$date": "2026-08-02T05:31:12Z"
+        },
+        "executado_por_id_funcionario": 120
+      },
+      {
+        "ordem": 2,
+        "acao": "Glicemia capilar",
+        "hora": {
+          "$date": "2026-08-02T05:32:07Z"
+        },
+        "executado_por_id_funcionario": 120
+      },
+      {
+        "ordem": 3,
+        "acao": "Diazepam 10 mg EV conforme prescrição",
+        "hora": {
+          "$date": "2026-08-02T05:36:27Z"
+        },
+        "executado_por_id_funcionario": 120
+      },
+      {
+        "ordem": 4,
+        "acao": "Avaliação neurológica pelo médico plantonista",
+        "hora": {
+          "$date": "2026-08-02T05:40:35Z"
+        },
+        "executado_por_id_funcionario": 242
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-08-02T08:15:35Z"
+    },
+    "tags": [
+      "neurologico"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000800",
+    "id_atendimento": 1122,
+    "id_paciente": 1410,
+    "id_cadastro_provisorio": null,
+    "id_local": 44,
+    "data_hora": {
+      "$date": "2026-08-09T12:07:50Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "CRITICA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda súbita de saturação de O2 para 82% com desconforto respiratório.",
+    "responsavel": {
+      "id_funcionario": 211,
+      "login": "benedito.leite",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-08-09T12:12:47Z"
+        },
+        "executado_por_id_funcionario": 90
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-08-09T12:14:43Z"
+        },
+        "executado_por_id_funcionario": 90
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-08-09T12:16:40Z"
+        },
+        "executado_por_id_funcionario": 211
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-08-09T14:57:40Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000847",
+    "id_atendimento": 1247,
+    "id_paciente": 1218,
+    "id_cadastro_provisorio": null,
+    "id_local": 39,
+    "data_hora": {
+      "$date": "2026-08-16T17:53:10Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Queda súbita de saturação de O2 para 84% com desconforto respiratório.",
+    "responsavel": {
+      "id_funcionario": 284,
+      "login": "nicolas.cunha",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-08-16T17:55:35Z"
+        },
+        "executado_por_id_funcionario": 214
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-08-16T18:00:59Z"
+        },
+        "executado_por_id_funcionario": 214
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-08-16T18:02:51Z"
+        },
+        "executado_por_id_funcionario": 284
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-08-16T21:59:51Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000894",
+    "id_atendimento": 1309,
+    "id_paciente": 786,
+    "id_cadastro_provisorio": null,
+    "id_local": 36,
+    "data_hora": {
+      "$date": "2026-08-24T09:03:38Z"
+    },
+    "categoria": "HEMORRAGICA",
+    "gravidade": "CRITICA",
+    "status": "RESOLVIDA",
+    "descricao": "Novo episódio de hematêmese com cerca de 100 mL.",
+    "responsavel": {
+      "id_funcionario": 284,
+      "login": "nicolas.cunha",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Compressão local",
+        "hora": {
+          "$date": "2026-08-24T09:06:22Z"
+        },
+        "executado_por_id_funcionario": 31
+      },
+      {
+        "ordem": 2,
+        "acao": "Coleta de hemograma de controle",
+        "hora": {
+          "$date": "2026-08-24T09:07:44Z"
+        },
+        "executado_por_id_funcionario": 31
+      },
+      {
+        "ordem": 3,
+        "acao": "Avaliação médica imediata",
+        "hora": {
+          "$date": "2026-08-24T09:09:44Z"
+        },
+        "executado_por_id_funcionario": 284
+      },
+      {
+        "ordem": 4,
+        "acao": "Reserva de hemocomponentes",
+        "hora": {
+          "$date": "2026-08-24T09:14:05Z"
+        },
+        "executado_por_id_funcionario": 284
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-08-24T12:35:05Z"
+    },
+    "tags": [
+      "sangramento"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000941",
+    "id_atendimento": 1457,
+    "id_paciente": 1546,
+    "id_cadastro_provisorio": null,
+    "id_local": 35,
+    "data_hora": {
+      "$date": "2026-09-09T00:30:31Z"
+    },
+    "categoria": "CARDIOVASCULAR",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Taquicardia de 112 bpm com palpitação e mal-estar.",
+    "responsavel": {
+      "id_funcionario": 268,
+      "login": "nicolas.dias",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Monitorização cardíaca contínua",
+        "hora": {
+          "$date": "2026-09-09T00:35:58Z"
+        },
+        "executado_por_id_funcionario": 118
+      },
+      {
+        "ordem": 2,
+        "acao": "Eletrocardiograma de 12 derivações",
+        "hora": {
+          "$date": "2026-09-09T00:38:07Z"
+        },
+        "executado_por_id_funcionario": 118
+      },
+      {
+        "ordem": 3,
+        "acao": "Avaliação médica imediata à beira do leito",
+        "hora": {
+          "$date": "2026-09-09T00:44:05Z"
+        },
+        "executado_por_id_funcionario": 268
+      },
+      {
+        "ordem": 4,
+        "acao": "Acesso venoso calibroso",
+        "hora": {
+          "$date": "2026-09-09T00:47:09Z"
+        },
+        "executado_por_id_funcionario": 118
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-09-09T03:10:09Z"
+    },
+    "tags": [
+      "taquicardia",
+      "monitorizacao"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-000988",
+    "id_atendimento": 1511,
+    "id_paciente": 1570,
+    "id_cadastro_provisorio": null,
+    "id_local": 39,
+    "data_hora": {
+      "$date": "2026-09-17T04:41:03Z"
+    },
+    "categoria": "RESPIRATORIA",
+    "gravidade": "CRITICA",
+    "status": "RESOLVIDA",
+    "descricao": "Dispneia intensa com uso de musculatura acessória e saturação de 89%.",
+    "responsavel": {
+      "id_funcionario": 207,
+      "login": "rafael.cardoso",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Oferta de oxigênio por máscara não reinalante a 10 L/min",
+        "hora": {
+          "$date": "2026-09-17T04:44:50Z"
+        },
+        "executado_por_id_funcionario": 39
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação da cabeceira a 45 graus",
+        "hora": {
+          "$date": "2026-09-17T04:47:25Z"
+        },
+        "executado_por_id_funcionario": 39
+      },
+      {
+        "ordem": 3,
+        "acao": "Solicitação de gasometria arterial de urgência",
+        "hora": {
+          "$date": "2026-09-17T04:51:57Z"
+        },
+        "executado_por_id_funcionario": 207
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-09-17T07:53:57Z"
+    },
+    "tags": [
+      "hipoxemia",
+      "oxigenoterapia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001035",
+    "id_atendimento": 1624,
+    "id_paciente": 1611,
+    "id_cadastro_provisorio": 85,
+    "id_local": 39,
+    "data_hora": {
+      "$date": "2026-09-26T21:31:03Z"
+    },
+    "categoria": "ACESSO_VENOSO",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Perda do acesso venoso periférico com infiltração no antebraço.",
+    "responsavel": {
+      "id_funcionario": 122,
+      "login": "cristina.galvao",
+      "cargo": "Técnico de enfermagem"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Retirada do cateter",
+        "hora": {
+          "$date": "2026-09-26T21:35:46Z"
+        },
+        "executado_por_id_funcionario": 122
+      },
+      {
+        "ordem": 2,
+        "acao": "Nova punção em membro contralateral",
+        "hora": {
+          "$date": "2026-09-26T21:38:07Z"
+        },
+        "executado_por_id_funcionario": 122
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-09-27T00:20:07Z"
+    },
+    "tags": [
+      "acesso_venoso"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001082",
+    "id_atendimento": 1652,
+    "id_paciente": 1616,
+    "id_cadastro_provisorio": null,
+    "id_local": 35,
+    "data_hora": {
+      "$date": "2026-10-05T00:17:33Z"
+    },
+    "categoria": "NEUROLOGICA",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Rebaixamento do nível de consciência (Glasgow 8).",
+    "responsavel": {
+      "id_funcionario": 305,
+      "login": "leticia.dias",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Proteção das vias aéreas e lateralização",
+        "hora": {
+          "$date": "2026-10-05T00:23:29Z"
+        },
+        "executado_por_id_funcionario": 87
+      },
+      {
+        "ordem": 2,
+        "acao": "Glicemia capilar",
+        "hora": {
+          "$date": "2026-10-05T00:25:05Z"
+        },
+        "executado_por_id_funcionario": 87
+      },
+      {
+        "ordem": 3,
+        "acao": "Diazepam 10 mg EV conforme prescrição",
+        "hora": {
+          "$date": "2026-10-05T00:27:19Z"
+        },
+        "executado_por_id_funcionario": 87
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-10-05T00:59:19Z"
+    },
+    "tags": [
+      "neurologico"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001129",
+    "id_atendimento": 1788,
+    "id_paciente": 1663,
+    "id_cadastro_provisorio": null,
+    "id_local": 20,
+    "data_hora": {
+      "$date": "2026-10-11T16:48:43Z"
+    },
+    "categoria": "AGITACAO",
+    "gravidade": "MEDIA",
+    "status": "RESOLVIDA",
+    "descricao": "Agitação psicomotora com tentativa de retirar dispositivos.",
+    "responsavel": {
+      "id_funcionario": 216,
+      "login": "joao.siqueira",
+      "cargo": "Enfermeiro intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Abordagem verbal e redução de estímulos",
+        "hora": {
+          "$date": "2026-10-11T16:52:46Z"
+        },
+        "executado_por_id_funcionario": 216
+      },
+      {
+        "ordem": 2,
+        "acao": "Haloperidol 5 mg IM conforme prescrição",
+        "hora": {
+          "$date": "2026-10-11T16:55:40Z"
+        },
+        "executado_por_id_funcionario": 216
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-10-11T20:10:40Z"
+    },
+    "tags": [
+      "agitacao"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001176",
+    "id_atendimento": 1717,
+    "id_paciente": 521,
+    "id_cadastro_provisorio": null,
+    "id_local": 43,
+    "data_hora": {
+      "$date": "2026-10-17T10:58:56Z"
+    },
+    "categoria": "HEMODINAMICA",
+    "gravidade": "ALTA",
+    "status": "RESOLVIDA",
+    "descricao": "Hipotensão de 71x41 mmHg com sudorese e palidez.",
+    "responsavel": {
+      "id_funcionario": 279,
+      "login": "ana.prado",
+      "cargo": "Médico intensivista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Expansão volêmica com SF 0,9% 500 mL",
+        "hora": {
+          "$date": "2026-10-17T11:00:31Z"
+        },
+        "executado_por_id_funcionario": 32
+      },
+      {
+        "ordem": 2,
+        "acao": "Elevação dos membros inferiores",
+        "hora": {
+          "$date": "2026-10-17T11:05:54Z"
+        },
+        "executado_por_id_funcionario": 32
+      },
+      {
+        "ordem": 3,
+        "acao": "Início de noradrenalina em bomba de infusão",
+        "hora": {
+          "$date": "2026-10-17T11:10:18Z"
+        },
+        "executado_por_id_funcionario": 279
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-10-17T12:28:44Z"
+    },
+    "tags": [
+      "hipotensao",
+      "instabilidade_hemodinamica",
+      "uti"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001223",
+    "id_atendimento": 1902,
+    "id_paciente": 1700,
+    "id_cadastro_provisorio": null,
+    "id_local": 20,
+    "data_hora": {
+      "$date": "2026-10-22T01:15:15Z"
+    },
+    "categoria": "ACESSO_VENOSO",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Perda do acesso venoso periférico com infiltração no antebraço.",
+    "responsavel": {
+      "id_funcionario": 107,
+      "login": "silvia.goncalves",
+      "cargo": "Técnico de enfermagem"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Retirada do cateter",
+        "hora": {
+          "$date": "2026-10-22T01:17:03Z"
+        },
+        "executado_por_id_funcionario": 107
+      },
+      {
+        "ordem": 2,
+        "acao": "Nova punção em membro contralateral",
+        "hora": {
+          "$date": "2026-10-22T01:20:38Z"
+        },
+        "executado_por_id_funcionario": 107
+      },
+      {
+        "ordem": 3,
+        "acao": "Compressa fria no local",
+        "hora": {
+          "$date": "2026-10-22T01:21:44Z"
+        },
+        "executado_por_id_funcionario": 107
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-10-22T02:44:20Z"
+    },
+    "tags": [
+      "acesso_venoso"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001270",
+    "id_atendimento": 1949,
+    "id_paciente": 919,
+    "id_cadastro_provisorio": null,
+    "id_local": 35,
+    "data_hora": {
+      "$date": "2026-10-28T01:31:04Z"
+    },
+    "categoria": "REACAO_MEDICAMENTO",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Prurido e placas urticariformes após administração de Cloreto.",
+    "responsavel": {
+      "id_funcionario": 173,
+      "login": "marco.faria",
+      "cargo": "Médico cirurgião geral"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Suspensão imediata da medicação",
+        "hora": {
+          "$date": "2026-10-28T01:33:57Z"
+        },
+        "executado_por_id_funcionario": 302
+      },
+      {
+        "ordem": 2,
+        "acao": "Prometazina 25 mg IM",
+        "hora": {
+          "$date": "2026-10-28T01:37:37Z"
+        },
+        "executado_por_id_funcionario": 302
+      },
+      {
+        "ordem": 3,
+        "acao": "Observação clínica por 1 hora após a reação",
+        "hora": {
+          "$date": "2026-10-28T01:42:19Z"
+        },
+        "executado_por_id_funcionario": 302
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-10-28T03:01:19Z"
+    },
+    "tags": [
+      "reacao_adversa",
+      "farmacovigilancia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001317",
+    "id_atendimento": 1976,
+    "id_paciente": 249,
+    "id_cadastro_provisorio": null,
+    "id_local": 33,
+    "data_hora": {
+      "$date": "2026-11-03T02:31:46Z"
+    },
+    "categoria": "METABOLICA",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Hiperglicemia de 538 mg/dL mesmo após insulina.",
+    "responsavel": {
+      "id_funcionario": 271,
+      "login": "leonardo.brandao",
+      "cargo": "Médico hospitalista"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Glicemia capilar de controle",
+        "hora": {
+          "$date": "2026-11-03T02:33:50Z"
+        },
+        "executado_por_id_funcionario": 203
+      },
+      {
+        "ordem": 2,
+        "acao": "Glicose 50% 30 mL EV",
+        "hora": {
+          "$date": "2026-11-03T02:35:07Z"
+        },
+        "executado_por_id_funcionario": 203
+      },
+      {
+        "ordem": 3,
+        "acao": "Ajuste da insulinoterapia conforme protocolo",
+        "hora": {
+          "$date": "2026-11-03T02:40:51Z"
+        },
+        "executado_por_id_funcionario": 174
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-11-03T03:56:51Z"
+    },
+    "tags": [
+      "glicemia"
+    ]
+  },
+  {
+    "codigo_intercorrencia": "INT-2026-001364",
+    "id_atendimento": 2075,
+    "id_paciente": 601,
+    "id_cadastro_provisorio": null,
+    "id_local": 38,
+    "data_hora": {
+      "$date": "2026-11-09T04:59:51Z"
+    },
+    "categoria": "ACESSO_VENOSO",
+    "gravidade": "BAIXA",
+    "status": "RESOLVIDA",
+    "descricao": "Perda do acesso venoso periférico com infiltração no antebraço.",
+    "responsavel": {
+      "id_funcionario": 195,
+      "login": "heitor.medeiros",
+      "cargo": "Técnico de enfermagem"
+    },
+    "medidas_adotadas": [
+      {
+        "ordem": 1,
+        "acao": "Retirada do cateter",
+        "hora": {
+          "$date": "2026-11-09T05:03:18Z"
+        },
+        "executado_por_id_funcionario": 195
+      },
+      {
+        "ordem": 2,
+        "acao": "Nova punção em membro contralateral",
+        "hora": {
+          "$date": "2026-11-09T05:04:41Z"
+        },
+        "executado_por_id_funcionario": 195
+      },
+      {
+        "ordem": 3,
+        "acao": "Compressa fria no local",
+        "hora": {
+          "$date": "2026-11-09T05:06:13Z"
+        },
+        "executado_por_id_funcionario": 195
+      }
+    ],
+    "data_hora_resolucao": {
+      "$date": "2026-11-09T08:39:13Z"
+    },
+    "tags": [
+      "acesso_venoso"
+    ]
+  }
+]
