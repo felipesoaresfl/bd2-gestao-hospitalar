@@ -36,7 +36,9 @@ bd2-gestao-hospitalar/
 ├── mysql/                    # Scripts do banco de dados relacional
 │   ├── ddl/                  # Criação de banco e tabelas (01_criacao_banco.sql, 02_criacao_tabelas.sql)
 │   ├── dml/                  # Inserção de dados: um arquivo por tabela (01_convenio.sql ... 37_alta.sql)
-│   ├── consultas/            # Scripts de SELECT (04_consultas.sql)
+│   │   └── operacoes/        # Exemplos de INSERT, UPDATE e DELETE do dia a dia do hospital
+│   ├── consultas/            # Consultas que respondem perguntas do hospital (WHERE, GROUP BY, HAVING, subconsultas)
+│   │   └── joins/            # Consultas com INNER JOIN e LEFT JOIN entre várias tabelas
 │   ├── views/                # Criação de Views (05_views.sql)
 │   ├── procedures/           # Stored Procedures (06_procedures.sql)
 │   ├── triggers/             # Triggers de validação/automação (07_triggers.sql)
