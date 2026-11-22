@@ -17,11 +17,17 @@ Nenhuma collection é cópia de tabela: elas guardam o que não cabe bem no rela
 
 ## 2. Ligação com o MySQL e regras dos dados
 
-- **Referências por ID:** `id_atendimento`, `id_paciente`, `id_cadastro_provisorio`, `id_funcionario`, `id_equipamento`, `id_local`, `id_leito`, `id_solicitacao` etc. são os mesmos IDs dos INSERTs do MySQL (`mysql/dml/01` a `37`). O MongoDB não tem chave estrangeira; quem garante a ligação é o script gerador, que lê os próprios arquivos `.sql`.
+- **Referências por ID:** `id_atendimento`, `id_paciente`, `id_cadastro_provisorio`, `id_funcionario`, `id_equipamento`, `id_local`, `id_leito`, `id_solicitacao` etc. são os mesmos IDs dos INSERTs do MySQL (`mysql/dml/01` a `37`). O MongoDB não tem chave estrangeira; a ligação foi garantida na montagem dos dados, feita a partir desses mesmos INSERTs.
 - **Sem CPF, senha ou registro profissional (LGPD):** o vínculo com pessoas é sempre por ID. Como complemento legível entram só chaves não sensíveis: `login` e cargo do funcionário, `numero_patrimonio` do equipamento.
 - **Paciente sem identificação:** quando o atendimento é de um cadastro provisório, `id_paciente` é `null` e `id_cadastro_provisorio` vem preenchido (igual à tabela `atendimento`).
 - **Datas em UTC:** o MySQL guarda horário de Brasília; no MongoDB tudo é `Date` em UTC (+3 h). Nos arquivos de carga as datas aparecem no formato Extended JSON `{"$date": "2026-04-02T01:05:52Z"}`, que o `mongoimport` e o `mongosh` convertem para `Date`.
 - **Coerência temporal:** toda leitura, intercorrência e evento acontece entre a entrada do paciente e a alta (ou o momento da carga, se o atendimento ainda está aberto).
+
+### Relação entre as collections
+
+![Relação entre as collections do MongoDB](relacao_collections_mongodb.png)
+
+A `linha_tempo_atendimento` é o centro: tem um documento por atendimento e se liga às outras pelo `id_atendimento`. Telemetria e intercorrências têm vários documentos por atendimento (N : 1). A auditoria aponta para o atendimento quando `entidade.tabela = "atendimento"`. Entre a linha do tempo e as intercorrências também existe o `codigo_intercorrencia`, usado no `$lookup`. Todas as collections guardam IDs do MySQL (paciente, funcionário, equipamento, local, leito) em vez de copiar o cadastro.
 
 ## 3. Embutir ou referenciar
 
@@ -423,8 +429,10 @@ O prontuário do atendimento em ordem cronológica, montado com os registros rea
 
 | Arquivo | Para que serve |
 |---|---|
-| `mongodb/dados/gerar_datasets_mongodb.py` | Lê `mysql/dml/*.sql` e gera os 4 arquivos de carga em `mongodb/datasets/` e as amostras |
-| `mongodb/dados/amostras/*.json` | 30 documentos de cada collection (versionados) |
+| `mongodb/dados/telemetria_sinais_vitais.json` | 75.013 documentos (um por linha) |
+| `mongodb/dados/logs_auditoria.json` | 27.704 documentos |
+| `mongodb/dados/intercorrencias_atendimento.json` | 1.419 documentos |
+| `mongodb/dados/linha_tempo_atendimento.json` | 2.200 documentos |
 | `mongodb/dados/01_insercao_manual.mongodb.js` | `insertOne` e `insertMany` em todas as collections |
-| `mongodb/dados/02_comandos_importacao.md` | Comandos de `mongoimport` e conferência |
-| `mongodb/dados/03_carga_datasets.mongodb.js` | Carga completa só com o `mongosh` |
+| `mongodb/dados/02_comandos_importacao.md` | Passo a passo para importar e conferir |
+| `docs/modelagem/relacao_collections_mongodb.png` | Imagem da relação entre as collections |
