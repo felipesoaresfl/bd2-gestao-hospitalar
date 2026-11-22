@@ -17,7 +17,7 @@ Nenhuma collection é cópia de tabela: elas guardam o que não cabe bem no rela
 
 ## 2. Ligação com o MySQL e regras dos dados
 
-- **Referências por ID:** `id_atendimento`, `id_paciente`, `id_cadastro_provisorio`, `id_funcionario`, `id_equipamento`, `id_local`, `id_leito`, `id_solicitacao` etc. são os mesmos IDs dos INSERTs do MySQL (`mysql/dml/01` a `37`). O MongoDB não tem chave estrangeira; a ligação foi garantida na montagem dos dados, feita a partir desses mesmos INSERTs.
+- **Referências por ID:** `id_atendimento`, `id_paciente`, `id_cadastro_provisorio`, `id_funcionario`, `id_equipamento`, `id_local`, `id_leito`, `id_solicitacao` etc. são os mesmos IDs dos INSERTs do MySQL (`mysql/dml/01` a `37`). O MongoDB não tem chave estrangeira; quem garante a ligação é o `gerar_datasets_mongodb.py`, que monta os documentos lendo esses mesmos INSERTs.
 - **Sem CPF, senha ou registro profissional (LGPD):** o vínculo com pessoas é sempre por ID. Como complemento legível entram só chaves não sensíveis: `login` e cargo do funcionário, `numero_patrimonio` do equipamento.
 - **Paciente sem identificação:** quando o atendimento é de um cadastro provisório, `id_paciente` é `null` e `id_cadastro_provisorio` vem preenchido (igual à tabela `atendimento`).
 - **Datas em UTC:** o MySQL guarda horário de Brasília; no MongoDB tudo é `Date` em UTC (+3 h). Nos arquivos de carga as datas aparecem no formato Extended JSON `{"$date": "2026-04-02T01:05:52Z"}`. Ao importar pelo MongoDB Compass (Add Data > Import JSON), ou ao inserir pelo `mongosh`, esse formato é convertido automaticamente para o tipo `Date`, sem nenhum tratamento manual.
@@ -429,12 +429,17 @@ O prontuário do atendimento em ordem cronológica, montado com os registros rea
 
 | Arquivo | Para que serve |
 |---|---|
-| `mongodb/dados/telemetria_sinais_vitais.json` | 75.013 documentos (um por linha) |
-| `mongodb/dados/logs_auditoria.json` | 27.704 documentos |
-| `mongodb/dados/intercorrencias_atendimento.json` | 1.419 documentos |
-| `mongodb/dados/linha_tempo_atendimento.json` | 2.200 documentos |
+| `mongodb/dados/gerar_datasets_mongodb.py` | Lê `mysql/dml/*.sql` e gera os 4 arquivos das collections em `mongodb/datasets/` (106.336 documentos, um por linha), além das amostras |
+| `mongodb/dados/amostras/*.json` | 30 documentos de cada collection, versionados para consulta rápida |
 | `mongodb/dados/01_insercao_manual.mongodb.js` | `insertOne` e `insertMany` em todas as collections |
 | `docs/modelagem/relacao_collections_mongodb.png` | Imagem da relação entre as collections (usada nesta modelagem) |
 | `docs/imagens/diagrama_mongodb.png` | Diagrama das 4 collections para a apresentação |
 
-**Ordem de carga:** (1) importar os 4 arquivos `.json` de `mongodb/dados/` pelo MongoDB Compass (Add Data > Import JSON), cada um na collection de mesmo nome; (2) executar `01_insercao_manual.mongodb.js` no `mongosh` para inserir os exemplos manuais e os registros de teste de exclusão. Resultado esperado: 106.336 documentos após a importação e 106.348 após a inserção manual.
+A pasta `mongodb/datasets/` (cerca de 70 MB) não vai para o repositório; ela é recriada pelo gerador.
+
+**Ordem de carga:**
+1. Rodar `python mongodb/dados/gerar_datasets_mongodb.py` na raiz do repositório.
+2. Importar os 4 arquivos de `mongodb/datasets/` pelo MongoDB Compass (Add Data > Import JSON), cada um na collection de mesmo nome.
+3. Executar `01_insercao_manual.mongodb.js` no `mongosh` para inserir os exemplos manuais e os registros de teste de exclusão.
+
+Resultado esperado: 106.336 documentos após a importação e 106.348 após a inserção manual.

@@ -1,0 +1,1186 @@
+[
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T09:53:47Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 95,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 230,
+        "diastolica_mmhg": 114
+      },
+      "saturacao_o2_pct": 93,
+      "temperatura_c": 36.2
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 230,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 93,
+    "paciente_ref": {
+      "id_paciente": 365,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 111,
+      "numero_patrimonio": "PAT-2025-00111",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 81
+    },
+    "localizacao": {
+      "id_local": 31,
+      "nome_local": "Observação adulto",
+      "tipo_local": "I",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-11T19:57:30Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 91,
+      "frequencia_respiratoria_irpm": 13,
+      "pressao_arterial": {
+        "sistolica_mmhg": 135,
+        "diastolica_mmhg": 73
+      },
+      "saturacao_o2_pct": 96,
+      "temperatura_c": 36.2
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 150,
+    "paciente_ref": {
+      "id_paciente": 178,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 110,
+      "numero_patrimonio": "PAT-2024-00110",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 82
+    },
+    "localizacao": {
+      "id_local": 31,
+      "nome_local": "Observação adulto",
+      "tipo_local": "I",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-16T21:54:17Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 101,
+      "frequencia_respiratoria_irpm": 20,
+      "pressao_arterial": {
+        "sistolica_mmhg": 130,
+        "diastolica_mmhg": 76
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 37.0
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "TAQUICARDIA",
+        "severidade": "BAIXA",
+        "valor_medido": 101,
+        "limite_referencia": 100
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 185,
+    "paciente_ref": {
+      "id_paciente": 946,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 161,
+      "numero_patrimonio": "PAT-2019-00161",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 96
+    },
+    "localizacao": {
+      "id_local": 40,
+      "nome_local": "Enfermaria pediátrica 208",
+      "tipo_local": "I",
+      "id_leito": 46,
+      "numero_leito": "208-C"
+    },
+    "timestamp": {
+      "$date": "2026-04-23T21:43:06Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 136,
+      "frequencia_respiratoria_irpm": 30,
+      "pressao_arterial": {
+        "sistolica_mmhg": 88,
+        "diastolica_mmhg": 48
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.4
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 196,
+    "paciente_ref": {
+      "id_paciente": 951,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 172,
+      "numero_patrimonio": "PAT-2022-00172",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 53,
+      "numero_leito": "UTI-04"
+    },
+    "timestamp": {
+      "$date": "2026-05-01T15:00:30Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 80,
+      "frequencia_respiratoria_irpm": 17,
+      "pressao_arterial": {
+        "sistolica_mmhg": 113,
+        "diastolica_mmhg": 66
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.3
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 349,
+    "paciente_ref": {
+      "id_paciente": 1023,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 215,
+      "numero_patrimonio": "PAT-2025-00215",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 83
+    },
+    "localizacao": {
+      "id_local": 44,
+      "nome_local": "UTI coronariana",
+      "tipo_local": "U",
+      "id_leito": 63,
+      "numero_leito": "UCO-04"
+    },
+    "timestamp": {
+      "$date": "2026-05-12T07:22:18Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 63,
+      "frequencia_respiratoria_irpm": 19,
+      "pressao_arterial": {
+        "sistolica_mmhg": 142,
+        "diastolica_mmhg": 84
+      },
+      "saturacao_o2_pct": 96,
+      "temperatura_c": 35.9
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 421,
+    "paciente_ref": {
+      "id_paciente": 1007,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 217,
+      "numero_patrimonio": "PAT-2019-00217",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 79
+    },
+    "localizacao": {
+      "id_local": 44,
+      "nome_local": "UTI coronariana",
+      "tipo_local": "U",
+      "id_leito": 65,
+      "numero_leito": "UCO-06"
+    },
+    "timestamp": {
+      "$date": "2026-05-20T18:40:11Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 75,
+      "frequencia_respiratoria_irpm": 14,
+      "pressao_arterial": {
+        "sistolica_mmhg": 131,
+        "diastolica_mmhg": 82
+      },
+      "saturacao_o2_pct": 96,
+      "temperatura_c": 37.0
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 436,
+    "paciente_ref": {
+      "id_paciente": 1068,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 178,
+      "numero_patrimonio": "PAT-2020-00178",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 88
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 59,
+      "numero_leito": "UTI-10"
+    },
+    "timestamp": {
+      "$date": "2026-05-28T12:27:00Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 87,
+      "frequencia_respiratoria_irpm": 14,
+      "pressao_arterial": {
+        "sistolica_mmhg": 133,
+        "diastolica_mmhg": 79
+      },
+      "saturacao_o2_pct": 96,
+      "temperatura_c": 36.6
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 529,
+    "paciente_ref": {
+      "id_paciente": 1117,
+      "id_cadastro_provisorio": 27,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 177,
+      "numero_patrimonio": "PAT-2019-00177",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 79
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 58,
+      "numero_leito": "UTI-09"
+    },
+    "timestamp": {
+      "$date": "2026-06-06T05:11:32Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 84,
+      "frequencia_respiratoria_irpm": 14,
+      "pressao_arterial": {
+        "sistolica_mmhg": 133,
+        "diastolica_mmhg": 77
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.3
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 636,
+    "paciente_ref": {
+      "id_paciente": 364,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 111,
+      "numero_patrimonio": "PAT-2025-00111",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 95
+    },
+    "localizacao": {
+      "id_local": 31,
+      "nome_local": "Observação adulto",
+      "tipo_local": "I",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-06-12T18:02:33Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 100,
+      "frequencia_respiratoria_irpm": 17,
+      "pressao_arterial": {
+        "sistolica_mmhg": 154,
+        "diastolica_mmhg": 91
+      },
+      "saturacao_o2_pct": 99,
+      "temperatura_c": 37.5
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 697,
+    "paciente_ref": {
+      "id_paciente": 1212,
+      "id_cadastro_provisorio": 40,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 75,
+      "numero_patrimonio": "PAT-2021-00075",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 82
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-06-18T20:46:53Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 70,
+      "frequencia_respiratoria_irpm": 18,
+      "pressao_arterial": {
+        "sistolica_mmhg": 186,
+        "diastolica_mmhg": 104
+      },
+      "saturacao_o2_pct": 95,
+      "temperatura_c": 37.4
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "MEDIA",
+        "valor_medido": 186,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 770,
+    "paciente_ref": {
+      "id_paciente": 312,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 110,
+      "numero_patrimonio": "PAT-2024-00110",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 90
+    },
+    "localizacao": {
+      "id_local": 31,
+      "nome_local": "Observação adulto",
+      "tipo_local": "I",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-06-25T07:41:53Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 93,
+      "frequencia_respiratoria_irpm": 18,
+      "pressao_arterial": {
+        "sistolica_mmhg": 130,
+        "diastolica_mmhg": 81
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.5
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 758,
+    "paciente_ref": {
+      "id_paciente": 1248,
+      "id_cadastro_provisorio": 43,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 174,
+      "numero_patrimonio": "PAT-2024-00174",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 87
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 55,
+      "numero_leito": "UTI-06"
+    },
+    "timestamp": {
+      "$date": "2026-07-02T16:29:02Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 70,
+      "frequencia_respiratoria_irpm": 19,
+      "pressao_arterial": {
+        "sistolica_mmhg": 124,
+        "diastolica_mmhg": 72
+      },
+      "saturacao_o2_pct": 94,
+      "temperatura_c": 36.5
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 896,
+    "paciente_ref": {
+      "id_paciente": 736,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 154,
+      "numero_patrimonio": "PAT-2020-00154",
+      "modelo": "Oxímetro de pulso OX-3",
+      "bateria_pct": 86
+    },
+    "localizacao": {
+      "id_local": 38,
+      "nome_local": "Enfermaria 206",
+      "tipo_local": "I",
+      "id_leito": 37,
+      "numero_leito": "206-B"
+    },
+    "timestamp": {
+      "$date": "2026-07-11T03:53:26Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 71,
+      "frequencia_respiratoria_irpm": 22,
+      "pressao_arterial": {
+        "sistolica_mmhg": 122,
+        "diastolica_mmhg": 77
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 37.3
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 960,
+    "paciente_ref": {
+      "id_paciente": 1326,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 111,
+      "numero_patrimonio": "PAT-2025-00111",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 83
+    },
+    "localizacao": {
+      "id_local": 31,
+      "nome_local": "Observação adulto",
+      "tipo_local": "I",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-07-17T07:22:01Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 94,
+      "frequencia_respiratoria_irpm": 18,
+      "pressao_arterial": {
+        "sistolica_mmhg": 134,
+        "diastolica_mmhg": 78
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 37.4
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1024,
+    "paciente_ref": {
+      "id_paciente": 1360,
+      "id_cadastro_provisorio": 58,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 173,
+      "numero_patrimonio": "PAT-2023-00173",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 86
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 54,
+      "numero_leito": "UTI-05"
+    },
+    "timestamp": {
+      "$date": "2026-07-23T04:56:38Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 79,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 156,
+        "diastolica_mmhg": 94
+      },
+      "saturacao_o2_pct": 95,
+      "temperatura_c": 36.3
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1059,
+    "paciente_ref": {
+      "id_paciente": 1377,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 171,
+      "numero_patrimonio": "PAT-2021-00171",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 89
+    },
+    "localizacao": {
+      "id_local": 43,
+      "nome_local": "UTI adulto",
+      "tipo_local": "U",
+      "id_leito": 52,
+      "numero_leito": "UTI-03"
+    },
+    "timestamp": {
+      "$date": "2026-08-01T07:02:09Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 60,
+      "frequencia_respiratoria_irpm": 19,
+      "pressao_arterial": {
+        "sistolica_mmhg": 116,
+        "diastolica_mmhg": 81
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.6
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1122,
+    "paciente_ref": {
+      "id_paciente": 1410,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 215,
+      "numero_patrimonio": "PAT-2025-00215",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 79
+    },
+    "localizacao": {
+      "id_local": 44,
+      "nome_local": "UTI coronariana",
+      "tipo_local": "U",
+      "id_leito": 63,
+      "numero_leito": "UCO-04"
+    },
+    "timestamp": {
+      "$date": "2026-08-09T04:34:28Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 122,
+      "frequencia_respiratoria_irpm": 17,
+      "pressao_arterial": {
+        "sistolica_mmhg": 70,
+        "diastolica_mmhg": 40
+      },
+      "saturacao_o2_pct": 96,
+      "temperatura_c": 36.4
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "TAQUICARDIA",
+        "severidade": "MEDIA",
+        "valor_medido": 122,
+        "limite_referencia": 100
+      },
+      {
+        "codigo": "HIPOTENSAO",
+        "severidade": "CRITICA",
+        "valor_medido": 70,
+        "limite_referencia": 90
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1192,
+    "paciente_ref": {
+      "id_paciente": 1442,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 212,
+      "numero_patrimonio": "PAT-2022-00212",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 77
+    },
+    "localizacao": {
+      "id_local": 44,
+      "nome_local": "UTI coronariana",
+      "tipo_local": "U",
+      "id_leito": 60,
+      "numero_leito": "UCO-01"
+    },
+    "timestamp": {
+      "$date": "2026-08-15T19:44:20Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 81,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 141,
+        "diastolica_mmhg": 76
+      },
+      "saturacao_o2_pct": 98,
+      "temperatura_c": 37.2
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1289,
+    "paciente_ref": {
+      "id_paciente": 799,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 215,
+      "numero_patrimonio": "PAT-2025-00215",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 78
+    },
+    "localizacao": {
+      "id_local": 44,
+      "nome_local": "UTI coronariana",
+      "tipo_local": "U",
+      "id_leito": 63,
+      "numero_leito": "UCO-04"
+    },
+    "timestamp": {
+      "$date": "2026-08-22T05:52:36Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 79,
+      "frequencia_respiratoria_irpm": 13,
+      "pressao_arterial": {
+        "sistolica_mmhg": 112,
+        "diastolica_mmhg": 82
+      },
+      "saturacao_o2_pct": 97,
+      "temperatura_c": 36.9
+    },
+    "alertas_disparados": [],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T09:53:47Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 95,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 230,
+        "diastolica_mmhg": 114
+      },
+      "saturacao_o2_pct": 93,
+      "temperatura_c": 36.2
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 230,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T10:09:52Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 94,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 223,
+        "diastolica_mmhg": 118
+      },
+      "saturacao_o2_pct": 94,
+      "temperatura_c": 36.0
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 223,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T10:25:04Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 89,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 218,
+        "diastolica_mmhg": 110
+      },
+      "saturacao_o2_pct": 92,
+      "temperatura_c": 36.0
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 218,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T10:39:10Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 94,
+      "frequencia_respiratoria_irpm": 13,
+      "pressao_arterial": {
+        "sistolica_mmhg": 220,
+        "diastolica_mmhg": 119
+      },
+      "saturacao_o2_pct": 93,
+      "temperatura_c": 35.9
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 220,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T10:54:47Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 96,
+      "frequencia_respiratoria_irpm": 11,
+      "pressao_arterial": {
+        "sistolica_mmhg": 224,
+        "diastolica_mmhg": 111
+      },
+      "saturacao_o2_pct": 93,
+      "temperatura_c": 36.0
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 224,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T11:07:34Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 97,
+      "frequencia_respiratoria_irpm": 15,
+      "pressao_arterial": {
+        "sistolica_mmhg": 215,
+        "diastolica_mmhg": 115
+      },
+      "saturacao_o2_pct": 95,
+      "temperatura_c": 35.9
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 215,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T11:21:15Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 97,
+      "frequencia_respiratoria_irpm": 14,
+      "pressao_arterial": {
+        "sistolica_mmhg": 221,
+        "diastolica_mmhg": 111
+      },
+      "saturacao_o2_pct": 93,
+      "temperatura_c": 35.7
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 221,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T11:36:06Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 98,
+      "frequencia_respiratoria_irpm": 15,
+      "pressao_arterial": {
+        "sistolica_mmhg": 221,
+        "diastolica_mmhg": 114
+      },
+      "saturacao_o2_pct": 95,
+      "temperatura_c": 35.7
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 221,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T11:50:47Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 96,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 218,
+        "diastolica_mmhg": 107
+      },
+      "saturacao_o2_pct": 94,
+      "temperatura_c": 36.0
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 218,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  },
+  {
+    "id_atendimento": 1,
+    "paciente_ref": {
+      "id_paciente": 852,
+      "id_cadastro_provisorio": null,
+      "identificado": true
+    },
+    "dispositivo": {
+      "id_equipamento": 73,
+      "numero_patrimonio": "PAT-2019-00073",
+      "modelo": "Monitor multiparamétrico MP-12",
+      "bateria_pct": 92
+    },
+    "localizacao": {
+      "id_local": 20,
+      "nome_local": "Sala amarela (emergência)",
+      "tipo_local": "E",
+      "id_leito": null,
+      "numero_leito": null
+    },
+    "timestamp": {
+      "$date": "2026-04-01T12:07:15Z"
+    },
+    "sinais": {
+      "frequencia_cardiaca_bpm": 93,
+      "frequencia_respiratoria_irpm": 16,
+      "pressao_arterial": {
+        "sistolica_mmhg": 224,
+        "diastolica_mmhg": 117
+      },
+      "saturacao_o2_pct": 95,
+      "temperatura_c": 36.2
+    },
+    "alertas_disparados": [
+      {
+        "codigo": "HIPERTENSAO",
+        "severidade": "ALTA",
+        "valor_medido": 224,
+        "limite_referencia": 180
+      }
+    ],
+    "qualidade_sinal": "OK"
+  }
+]
