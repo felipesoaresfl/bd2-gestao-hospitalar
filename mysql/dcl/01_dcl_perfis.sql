@@ -52,14 +52,14 @@ GRANT SELECT ON gestao_emergencia_hospitalar.local                 TO 'medico_em
 GRANT SELECT (id_funcionario, id_cargo, nome, registro_profissional, status)
   ON gestao_emergencia_hospitalar.funcionario TO 'medico_emergencia'@'localhost';
 
-GRANT SELECT, UPDATE         ON gestao_emergencia_hospitalar.atendimento   TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.solicitacao   TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.internacao    TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT         ON gestao_emergencia_hospitalar.transferencia TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT         ON gestao_emergencia_hospitalar.alta          TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.doenca        TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.alergia       TO 'medico_emergencia'@'localhost';
-GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.cirurgia      TO 'medico_emergencia'@'localhost';
+GRANT SELECT, UPDATE         ON gestao_emergencia_hospitalar.atendimento     TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.solicitacao     TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.internacao      TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT         ON gestao_emergencia_hospitalar.transferencia   TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT         ON gestao_emergencia_hospitalar.alta            TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.doenca          TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.alergia         TO 'medico_emergencia'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.cirurgia        TO 'medico_emergencia'@'localhost';
 GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.contraindicacao TO 'medico_emergencia'@'localhost';
 
 -- 2.3 Recepção: cadastro de pacientes e abertura de atendimentos
@@ -72,13 +72,20 @@ GRANT SELECT                 ON gestao_emergencia_hospitalar.status_atendimento 
 GRANT SELECT                 ON gestao_emergencia_hospitalar.local               TO 'recepcao_emergencia'@'localhost';
 GRANT SELECT, INSERT, UPDATE ON gestao_emergencia_hospitalar.atendimento         TO 'recepcao_emergencia'@'localhost';
 
--- 2.4 Analista: somente leitura, sem dados de login dos funcionários
+-- 2.4 Analista: somente leitura nas tabelas das consultas analíticas (sem cpf/senha)
 GRANT SELECT ON gestao_emergencia_hospitalar.paciente              TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.cadastro_provisorio   TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.convenio              TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.historico_clinico     TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.alergia               TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.atendimento           TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.status_atendimento    TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.classificacao_risco   TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.triagem               TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.sinais_vitais         TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.solicitacao           TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.exame                 TO 'analista_emergencia'@'localhost';
+GRANT SELECT ON gestao_emergencia_hospitalar.tipo_exame            TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.resultado_exame       TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.internacao            TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.ocupacao              TO 'analista_emergencia'@'localhost';
@@ -89,35 +96,22 @@ GRANT SELECT ON gestao_emergencia_hospitalar.local                 TO 'analista_
 GRANT SELECT ON gestao_emergencia_hospitalar.insumo                TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.estoque               TO 'analista_emergencia'@'localhost';
 GRANT SELECT ON gestao_emergencia_hospitalar.movimentacao_estoque  TO 'analista_emergencia'@'localhost';
--- tabelas lidas pelas 12 consultas analíticas do grupo
-GRANT SELECT ON gestao_emergencia_hospitalar.exame                 TO 'analista_emergencia'@'localhost';
-GRANT SELECT ON gestao_emergencia_hospitalar.tipo_exame            TO 'analista_emergencia'@'localhost';
-GRANT SELECT ON gestao_emergencia_hospitalar.convenio              TO 'analista_emergencia'@'localhost';
-GRANT SELECT ON gestao_emergencia_hospitalar.historico_clinico     TO 'analista_emergencia'@'localhost';
-GRANT SELECT ON gestao_emergencia_hospitalar.alergia               TO 'analista_emergencia'@'localhost';
-GRANT SELECT ON gestao_emergencia_hospitalar.cadastro_provisorio   TO 'analista_emergencia'@'localhost';
 GRANT SELECT (id_funcionario, id_cargo, nome, data_admissao, status)
   ON gestao_emergencia_hospitalar.funcionario TO 'analista_emergencia'@'localhost';
--- executa as Procedures de consulta (Ana)
 GRANT EXECUTE ON gestao_emergencia_hospitalar.* TO 'analista_emergencia'@'localhost';
 
 -- ---------------------------------------------------------------------
 -- 3) REVOKE
 -- ---------------------------------------------------------------------
--- Médico deixa de poder criar solicitações (passa só a consultar)
 REVOKE INSERT, UPDATE ON gestao_emergencia_hospitalar.solicitacao
   FROM 'medico_emergencia'@'localhost';
 
--- Recepção abre o atendimento, mas não altera mais depois de criado
 REVOKE UPDATE ON gestao_emergencia_hospitalar.atendimento
   FROM 'recepcao_emergencia'@'localhost';
 
--- Analista perde a execução de Procedures
 REVOKE EXECUTE ON gestao_emergencia_hospitalar.*
   FROM 'analista_emergencia'@'localhost';
 
--- Analista perde o acesso aos dados de transferências
--- (tabela que nenhuma das 12 consultas usa, então o REVOKE não quebra nada)
 REVOKE SELECT ON gestao_emergencia_hospitalar.transferencia
   FROM 'analista_emergencia'@'localhost';
 
@@ -130,15 +124,26 @@ SHOW GRANTS FOR 'dba_emergencia'@'localhost';
 SHOW GRANTS FOR 'medico_emergencia'@'localhost';
 SHOW GRANTS FOR 'recepcao_emergencia'@'localhost';
 SHOW GRANTS FOR 'analista_emergencia'@'localhost';
+```[cite: 4, 11, 25]
 
--- ---------------------------------------------------------------------
--- 5) Testes sugeridos (conectar com cada usuário no Workbench)
--- ---------------------------------------------------------------------
--- analista_emergencia:
---   SELECT * FROM atendimento LIMIT 5;                 -- funciona
---   SELECT senha FROM funcionario;                     -- ERRO: SELECT command denied (coluna)
---   INSERT INTO leito (id_local, numero, tipo) VALUES (1, 'X1', 'E');  -- ERRO
--- recepcao_emergencia:
---   UPDATE atendimento SET id_status = 2 WHERE id_atendimento = 1;     -- ERRO após o REVOKE
--- medico_emergencia:
---   INSERT INTO solicitacao (...) VALUES (...);        -- ERRO após o REVOKE
+---
+
+## 2. Passo a passo de validação no MySQL Workbench (a partir de onde você está)
+
+Como você já criou o banco, criou as 37 tabelas e rodou os `INSERT`s[cite: 3, 8], siga estes passos:
+
+### Passo 1 — Rodar as operações do DML (`mysql/dml/operacoes/`) e conferir o total de registros
+1. Execute os scripts da pasta `mysql/dml/operacoes/` (`01` a `11`)[cite: 8].
+2. Rode uma contagem para confirmar o volume de registros e salvar um print:
+```sql
+USE gestao_emergencia_hospitalar;
+SELECT SUM(linhas) AS total_registros FROM (
+  SELECT COUNT(*) AS linhas FROM paciente
+  UNION ALL SELECT COUNT(*) FROM atendimento
+  UNION ALL SELECT COUNT(*) FROM triagem
+  UNION ALL SELECT COUNT(*) FROM sinais_vitais
+  UNION ALL SELECT COUNT(*) FROM solicitacao
+  UNION ALL SELECT COUNT(*) FROM resultado_exame
+  UNION ALL SELECT COUNT(*) FROM movimentacao_estoque
+  UNION ALL SELECT COUNT(*) FROM alta
+) t;
