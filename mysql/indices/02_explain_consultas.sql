@@ -203,9 +203,8 @@ GROUP BY te.id_tipo_exame, te.nome
 HAVING AVG(TIMESTAMPDIFF(MINUTE, s.data_hora, r.data_hora_resultado)) > 60
 ORDER BY media_horas_ate_laudo DESC;
 
--- Tempo real de execução (ms) nas consultas mais intensivas (MySQL 8)
-EXPLAIN ANALYZE
-SELECT
+-- Tempo real de execução (ms) nas consultas mais intensivas (MariaDB)
+ANALYZE SELECT
     i.nome AS insumo,
     i.unidade_medida,
     SUM(m.quantidade) AS consumo_em_atendimentos,
@@ -223,8 +222,7 @@ GROUP BY i.id_insumo, i.nome, i.unidade_medida, i.estoque_minimo
 ORDER BY consumo_em_atendimentos DESC
 LIMIT 15;
 
-EXPLAIN ANALYZE
-SELECT
+ANALYZE SELECT
     sv.data_hora,
     COALESCE(p.nome, cp.identificacao) AS paciente,
     sv.pressao_sistolica,
